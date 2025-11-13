@@ -1,0 +1,70 @@
+"lang"
+{
+	"Language"		"English"
+	"Tokens"
+	{	
+		//-------------------------------------------------------------------------------------------------------------
+		// Bakedanuki: Tomfoolery (Blink)
+		//-------------------------------------------------------------------------------------------------------------
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_blink"
+			"Tomfoolery (Blink)"
+
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_blink_Description"
+			"Short distance teleportation that leaves behind an illusion of Mamizou. Mamizou will also act just like an illusion, taking more damage and doing less damage. If either the illusion or her transformation dies, the trick ends, killing the illusion and reverting her back to normal."
+
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_blink_Lore"
+			"Confusing them is not even part of the plan."
+
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_blink_Note0"
+			"Shares levels and cooldown with Tomfoolery (Summon)."
+
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_blink_Note1"
+			"Casting spells and using items prematurely ends the trick."
+
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_blink_Note2"
+			"When the trick ends, the illusion dies and Mamizou reverts to normal. Her HP is the same as before she transformed."
+
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_blink_illusion_range"		"MAX DISTANCE:"
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_blink_illusion_duration"	"DURATION:"
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_blink_illusion_outgoing"	"%DAMAGE DEALT:"
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_blink_illusion_incoming"	"%DAMAGE TAKEN:"
+
+		//-------------------------------------------------------------------------------------------------------------
+		// Bakedanuki: Tomfoolery (Summon)
+		//-------------------------------------------------------------------------------------------------------------
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_summon"
+			"Tomfoolery (Blink)"
+
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_summon_Description"
+			"Summons an illusion. Mamizou will also act just like an illusion, taking more damage and doing less damage. If either the illusion or her transformation dies, the trick ends, killing the illusion and reverting her back to normal."
+
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_summon_Lore"
+			"Confusing them is not even part of the plan."
+
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_summon_Note0"
+			"Shares levels and cooldown with Tomfoolery (Blink)."
+
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_summon_Note1"
+			"Casting spells and using items prematurely ends the trick."
+
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_summon_Note2"
+			"When the trick ends, the illusion dies and Mamizou reverts to normal. Her HP is the same as before she transformed."
+
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_summon_illusion_range"		"MAX DISTANCE:"
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_summon_illusion_duration"	"DURATION:"
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_summon_illusion_outgoing"	"%DAMAGE DEALT:"
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_summon_illusion_incoming"	"%DAMAGE TAKEN:"
+
+		//-------------------------------------------------------------------------------------------------------------
+		// Bakedanuki: Tomfoolery (End)
+		//-------------------------------------------------------------------------------------------------------------
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_end"
+			"End Trick"
+
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_end_Description"
+			"Manually ends the trick from Tomfoolery."
+
+		"DOTA_Tooltip_ability_bakedanuki_tomfoolery_end_Lore"
+			"There is no trick until it is revealed. "
+	}
+}
