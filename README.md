@@ -69,7 +69,7 @@ git clone https://github.com/YPYT1/dota2_npc_ability.git
 
 3. 启动 Dota 2，在控制台中运行
 ```
-dota_launch_custom_game dota-2-lua-abilities dota
+dota_launch_custom_game dota-2-lua-abilities（需要换成你自己的项目名称） dota（你自己的地图名称）
 ```
 
 ### 测试建议
@@ -169,7 +169,7 @@ SpellLibrary-master/
 - 随着项目规模扩大，无法保证所有技能完全无 Bug
 - 本项目仅供学习和 MOD 开发使用
 - 需要 Dota 2 Reborn 工具支持
-
+- 详情内容请查看 [项目详细介绍文档](./introduce.md)
 ---
 
 **统计数据：** 997+ Lua 脚本 | 156+ 粒子特效 | 2287 个文件 | 160,000+ 行代码

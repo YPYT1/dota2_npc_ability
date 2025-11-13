@@ -1,8 +1,9 @@
-modifier_template = class({})
+--攻击类修饰器 - 通用吸血效果
+modifier_generic_lifesteal = class({})
 
 --------------------------------------------------------------------------------
 -- Classifications
-function modifier_template:IsHidden()
+function modifier_generic_lifesteal:IsHidden()
 	return false
 end
 

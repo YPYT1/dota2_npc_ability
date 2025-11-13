@@ -1,4 +1,4 @@
--- Created by Elfansoer
+-- Created by Elfansoer 过滤器管理系统
 
 if FilterManager then return FilterManager end
 

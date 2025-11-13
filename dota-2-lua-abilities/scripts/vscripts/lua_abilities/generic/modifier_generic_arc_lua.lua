@@ -1,4 +1,4 @@
--- Created by Elfansoer
+-- Created by Elfansoer 运动类修饰器
 --[[
 	Generic Jump Arc
 

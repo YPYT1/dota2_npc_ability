@@ -1,4 +1,4 @@
-generic_unit_target = {}
+generic_unit_target = {} --通用组件库 修饰器 
 
 generic_unit_target.data = {
 	spell = nil,
