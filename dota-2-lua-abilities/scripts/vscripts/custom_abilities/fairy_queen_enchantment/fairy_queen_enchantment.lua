@@ -1,4 +1,4 @@
--- Created by Elfansoer
+dota-2-lua-abilities/scripts/vscripts/custom_abilities/fairy_queen_enchantment-- Created by Elfansoer
 --[[
 Ability checklist (erase if done/checked):
 - Scepter Upgrade
