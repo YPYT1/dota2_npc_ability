@@ -1,0 +1,33 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Angel Heart - custom neutral tier 1 item
+  //=================================================================================================================
+  "item_angel_heart"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/neutral/angel_heart.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "item_ocean_heart"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "0"
+    "ItemSellable"                                        "0"
+    "ItemIsNeutralPassiveDrop"                            "1"
+    "ItemPurchasable"                                     "0"
+
+    "Model"                                               "models/props_gameplay/neutral_box.vmdl"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_all_stats"                                   "5"
+      "bonus_hp_regen"                                    "5"
+      "mana_cost_reduction_pct"                           "5"
+    }
+  }
+}

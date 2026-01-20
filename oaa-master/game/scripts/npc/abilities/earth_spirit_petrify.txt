@@ -1,0 +1,50 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Earth Spirit: Petrify ( scepter ability )
+  //=================================================================================================================
+  "earth_spirit_petrify"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES" //OAA, Valve has extra space
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_CUSTOM"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_CUSTOM"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+
+    "MaxLevel"                                            "1"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "200" //OAA
+    "AbilityCastPoint"                                    "0.2"
+
+    // Time
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "30" //OAA
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "150"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "duration"                                          "2.4"
+      "damage"
+      {
+        "value"                                           "450"
+        "CalculateSpellDamageTooltip"                     "1"
+      }
+      "aoe"
+      {
+        "value"                                           "450"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "ally_cast_range"                                   "500"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Silver Edge 3
+  //=================================================================================================================
+  "item_recipe_silver_edge_3"
+  {
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_3"
+
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "3500"
+    "ItemShopTags"                                        ""
+
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_silver_edge_3"
+    "ItemRequirements"
+    {
+      "01"                                                "item_silver_edge_2;item_upgrade_core_2"
+    }
+  }
+
+  //=================================================================================================================
+  // Silver Edge 3
+  //=================================================================================================================
+  "item_silver_edge_3"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_silver_edge"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_PHYSICAL"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+    "AbilityTextureName"                                  "custom/silver_edge_3"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "20.0"
+    "AbilitySharedCooldown"                               "shadow_blade"
+    "AbilityManaCost"                                     "75"
+
+    // Spicy Parameters
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "3"
+    "UpgradesItems"                                       "item_silver_edge_4"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "10700"
+    "ItemShopTags"                                        "damage;attack_speed;crit;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "invis 3;silver edge 3"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_damage"                                      "70 80 100 130 170"
+      "bonus_attack_speed"                                "35 40 45 50 55"
+      "bonus_strength"                                    "0"
+      "bonus_intellect"                                   "0"
+      "bonus_mana_regen"                                  "0"
+      "windwalk_duration"                                 "13"
+      "windwalk_movement_speed"                           "25 30 35 40 45"
+      "windwalk_fade_time"                                "0.3"
+      "windwalk_bonus_damage"                             "300 400 500 600 700"
+      "backstab_duration"                                 "5"
+      "max_movement_speed"                                "200"
+      "visibility_radius"                                 "1025"
+    }
+  }
+}

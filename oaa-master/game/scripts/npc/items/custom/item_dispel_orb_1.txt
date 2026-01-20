@@ -1,0 +1,85 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Dispel Orb 1
+  //=================================================================================================================
+  "item_recipe_dispel_orb_1"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_3"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "3500"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_dispel_orb_1"
+    "ItemRequirements"
+    {
+      "01"                                                "item_black_king_bar_2;item_upgrade_core_2"
+      "02"                                                "item_manta_2;item_upgrade_core_2"
+    }
+  }
+
+  //=================================================================================================================
+  // Dispel Orb 1
+  //=================================================================================================================
+  "item_dispel_orb_1"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/dispel_orb.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+    "AbilityTextureName"                                  "custom/dispel_orb_1"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_dispel_orb_2"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "100"
+    "AbilityCooldown"                                     "20"
+    "AbilitySharedCooldown"                               "purge"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "9050"
+    "ItemShopTags"                                        "agi;int;str;damage;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "dispel orb; purge crystal"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_strength"                                    "27 42 62" // inherited from BKB
+      "bonus_agility"                                     "41 56 76" // inherited from Manta
+      "bonus_intellect"                                   "22 27 32" // inherited from Manta
+      "bonus_damage"                                      "55 85 125" // inherited from BKB
+      "magic_resist_while_silenced"                       "26 28 30"
+      "tick_interval"                                     "0.2"
+      "duration"                                          "7.0"
+    }
+
+    // Precache
+    //-------------------------------------------------------------------------------------------------------------
+    "precache"
+    {
+      "particle"                                          "particles/items/dispel_orb/dispel_base.vpcf"
+      "particle"                                          "particles/items/dispel_orb/dispel_b.vpcf"
+      "particle"                                          "particles/items/dispel_orb/dispel_steam.vpcf"
+    }
+  }
+}

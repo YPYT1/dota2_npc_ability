@@ -1,0 +1,70 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Spirit Breaker: Nether Strike
+  //=================================================================================================================
+  "spirit_breaker_nether_strike"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitTargetFlags"                              "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_YES"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES_STRONG"
+    "AbilityType"                                         "ABILITY_TYPE_ULTIMATE"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+
+    "MaxLevel"                                            "5"
+    "RequiredLevel"                                       "6"
+    "LevelsBetweenUpgrades"                               "6"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastPoint"                                    "1.0"
+    "AbilityCastRange"                                    "700"
+    "AbilityCastRangeBuffer"                              "500"
+
+    // Time
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "50 45 40 35 30" //OAA
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "125 150 175 200 225"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "damage" //OAA
+      {
+        "value"                                           "150 350 550 1150 1750"
+        "CalculateSpellDamageTooltip"                     "1"
+      }
+      "fade_time"                                         "1.0"
+      "shard_bonus_damage" // unused
+      {
+        "special_bonus_shard"                             "0"
+      }
+      "shard_break_duration" // unused
+      {
+        "special_bonus_shard"                             "0.0"
+      }
+      "shard_spell_immune_duration" // unused
+      {
+        "special_bonus_shard"                             "0.0"
+      }
+      "knockback_amp" // unused
+      {
+        "special_bonus_facet_spirit_breaker_imbalanced"   "+100"
+      }
+      "knockback_amp_duration" // unused
+      {
+        "special_bonus_facet_spirit_breaker_imbalanced"   "+6"
+      }
+    }
+  }
+
+}

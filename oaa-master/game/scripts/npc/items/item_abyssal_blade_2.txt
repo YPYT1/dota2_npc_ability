@@ -1,0 +1,77 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Abyssal Blade 2
+  //=================================================================================================================
+  "item_recipe_abyssal_blade_2"
+  {
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_2"
+
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "1500"
+    "ItemShopTags"                                        ""
+
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_abyssal_blade_2"
+    "ItemRequirements"
+    {
+      "01"                                                "item_skadi;item_upgrade_core"
+    }
+  }
+
+  //=================================================================================================================
+  // Abyssal Blade 2
+  //=================================================================================================================
+  "item_abyssal_blade_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_abyssal_blade"
+    "AbilityTextureName"                                  "custom/abyssal_blade_2"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitTargetFlags"                              "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "35"
+    "AbilitySharedCooldown"                               "abyssal"
+    "AbilityCastRange"                                    "200"
+    "AbilityCastPoint"                                    "0.0"
+    "AbilityManaCost"                                     "75"
+
+    // Spicy Parameters
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "2"
+    "UpgradesItems"                                       "item_abyssal_blade_3"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "7400"
+    "ItemShopTags"                                        "damage;str;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "abyssal blade 2"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_damage"                                      "10 20 40 70 110"
+      "slow_resistance"                                   "25 27 29 31 33"
+      "hp_regen_amp"                                      "20 22 24 26 28"
+      "bonus_strength"                                    "35 40 45 50 55"
+      "bash_chance_melee"                                 "25"
+      "bash_chance_ranged"                                "10"
+      "bash_duration"                                     "1.2"
+      "bash_cooldown"                                     "2.3"
+      "bonus_chance_damage"                               "180 230 330 480 680"
+      "stun_duration"                                     "1.6 1.7 1.8 1.9 2.0"
+    }
+  }
+}

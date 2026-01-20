@@ -1,0 +1,51 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Naga Siren: Rip Tide
+  //=================================================================================================================
+  "naga_siren_rip_tide"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastPoint"                                    "0"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "hits"
+      {
+        "value"                                           "6"
+      }
+      "armor_reduction"
+      {
+        "value"                                           "-2 -4 -6 -8 -12 -16"
+      }
+      "damage"
+      {
+        "value"                                           "30 40 50 60 160 260"
+        "special_bonus_unique_naga_siren_2"               "+30%"
+      }
+      "radius"
+      {
+        "value"                                           "300"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "duration"
+      {
+        "value"                                           "4.0"
+      }
+    }
+  }
+}

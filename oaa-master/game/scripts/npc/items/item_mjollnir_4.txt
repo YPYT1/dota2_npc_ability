@@ -1,0 +1,92 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Mjollnir 4
+  //=================================================================================================================
+  "item_recipe_mjollnir_4"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_4"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "8000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_mjollnir_4"
+    "ItemRequirements"
+    {
+      "01"                                                "item_mjollnir_3;item_upgrade_core_3"
+    }
+  }
+
+  //=================================================================================================================
+  // Mjollnir 4
+  //=================================================================================================================
+  "item_mjollnir_4"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_mjollnir"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+    "AbilityTextureName"                                  "custom/mjollnir_4"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "800"
+    "AbilityCastPoint"                                    "0.0"
+    "AbilityCooldown"                                     "35.0"
+    "AbilitySharedCooldown"                               "mjollnir"
+    "AbilityManaCost"                                     "50"
+
+    // Spicy Parameters
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "4"
+    "UpgradesItems"                                       "item_mjollnir_5"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "18500"
+    "ItemShopTags"                                        "damage;attack_speed;unique"
+    "ItemQuality"                                         "artifact"
+    "ItemAliases"                                         "mjollnir 4;lightning 4"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_damage"                                      "25 35 55 85 125"
+      "bonus_attack_speed"                                "85 90 95 100 105"
+      "static_duration"                                   "15.0"
+      "static_chance"                                     "20"
+      "static_strikes"                                    "4"
+      "static_damage"                                     "225 325 425 525 625"
+      "static_primary_radius"                             "600"
+      "static_seconary_radius"                            "900"
+      "static_radius"                                     "900"
+      "static_cooldown"                                   "1.0"
+      "chain_chance"                                      "25"
+      "chain_damage"                                      "180 230 330 480 680"
+      "chain_strikes"                                     "12"
+      "chain_radius"                                      "650 750 850 950 1050"
+      "chain_delay"                                       "0.25"
+      "chain_cooldown"                                    "0.2"
+      "max_charges"                                       "0"
+      "illusion_multiplier_pct"                           "100"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Clockwerk: Battery Assault
+  //=================================================================================================================
+  "rattletrap_battery_assault"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    //"AbilityCastPoint"                                    "0.0"
+
+    // Time
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "21 20 19 18 17 16" //OAA
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "90"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "radius"
+      {
+        "value"                                           "275"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "duration"                                          "10.5"
+      "interval"
+      {
+        "value"                                           "0.7"
+        "special_bonus_unique_clockwerk"                  "-0.25"
+      }
+      "damage" //OAA
+      {
+        "value"                                           "20 45 70 95 190 285"
+        "special_bonus_unique_clockwerk_3"                "+36"
+      }
+      "creep_damage_multiplier"                           "1.0"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Custom Mirana talent: Global Range Sacred Arrow - unused
+  //=================================================================================================================
+  "special_bonus_mirana_arrow_global"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "special_bonus_undefined"
+    "AbilityType"                                         "ABILITY_TYPE_ATTRIBUTES"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "cast_range"                                        "0"
+      "projectile_range"                                  "46000" // 45000 is enough even if the map size is 32k x 32k
+    }
+  }
+}

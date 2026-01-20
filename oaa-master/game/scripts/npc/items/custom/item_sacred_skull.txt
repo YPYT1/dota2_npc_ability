@@ -1,0 +1,72 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: A Sacred Skull 1
+  //=================================================================================================================
+  "item_recipe_sacred_skull"
+  {
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_3"
+
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "3500"
+    "ItemShopTags"                                        ""
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_sacred_skull"
+
+    "ItemRequirements"
+    {
+      "01"                                                "item_assault_2;item_upgrade_core_2"
+      "02"                                                "item_octarine_core_2;item_upgrade_core_2"
+    }
+  }
+
+  //=================================================================================================================
+  // A Sacred Skull 1
+  //=================================================================================================================
+  "item_sacred_skull"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/sacred_skull.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_YES"
+    "AbilityTextureName"                                  "custom/purpleskull_3"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "20"
+    "AbilityManaCost"                                     "0"
+    "AbilitySharedCooldown"                               "sacred_skull"
+
+    // Spicy Parameters
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_sacred_skull_2"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "9900"
+    "ItemShopTags"                                        "health_pool;armor;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "ass;sacred skull"
+
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_armor"                                       "12 15 19"
+      "bonus_health"                                      "0"
+      "cooldown_reduction"                                "15"
+      "passive_armor_reduction"                           "-8 -11 -15"
+      "armor_reduction_duration"                          "7"
+      "buff_duration"                                     "10"
+    }
+  }
+}

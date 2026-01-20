@@ -1,0 +1,126 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Charge BKB 2
+  //=================================================================================================================
+  "item_recipe_charge_bkb_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_3"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "3500"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_charge_bkb_2"
+    "ItemRequirements"
+    {
+      "01"                                                "item_charge_bkb;item_upgrade_core_2"
+    }
+  }
+
+  //=================================================================================================================
+  // Charge BKB 2
+  //=================================================================================================================
+  "item_charge_bkb_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/charge_bkb.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityTextureName"                                  "custom/charge_bkb_2"
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "20.0 18.0 16.0 13.0"
+    "AbilitySharedCooldown"                               "item_black_king_bar"
+    "AbilityCastRange"                                    "1200"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "9050"
+    "ItemShopTags"                                        "regen_health;regen_mana;boost_health;boost_mana;int;agi;str"
+    "ItemQuality"                                         "common"
+    "ItemAliases"                                         "charge bkb"
+    "ItemRequiresCharges"                                 "1"
+    "ItemDisplayCharges"                                  "1"
+    "ItemPermanent"                                       "1"
+    "ItemInitialCharges"                                  "0"
+    "MaxUpgradeLevel"                                     "4"
+    "ItemBaseLevel"                                       "2"
+    "UpgradesItems"                                       "item_charge_bkb_3"
+
+    "AbilityValues"
+    {
+      //Wand Stats:
+      "01"
+      {
+
+        "max_charges"                                     "99"
+      }
+      "02"
+      {
+
+        "charge_radius"                                   "1200"
+      }
+      "03"
+      {
+
+        "bonus_strength"                                  "20 30 40 55"
+      }
+      "04"
+      {
+
+        "bonus_agility"                                   "0"
+      }
+      "05"
+      {
+
+        "bonus_intellect"                                 "0"
+      }
+      "06"
+      {
+
+        "bonus_damage"                                    "48 72 96 120"
+      }
+      "07"
+      {
+
+        "restore_per_charge"                              "0"
+      }
+      "08"
+      {
+
+        "duration"                                        "0.1"    //RamonNZ: This needs to be left as a placeholder and kept low. This duration key is overwritten based on number of charges, but the lua script doesn't seem to be able to lessen the duration if we make it high.
+      }
+      "09"
+      {
+
+        "charge_decay_time"                               "10"    //RamonNZ: New KV - Each added charge will decay at this time interval.
+      }
+      "10"
+      {
+
+        "immunity_time_per_charge"                        "1"
+      }
+      "11"
+      {
+
+        "cooldown_time_per_charge"                        "5"
+      }
+      "12"
+      {
+
+        "model_scale"                                     "34 38 42 45"     // Percentage over model scale
+      }
+    }
+  }
+}

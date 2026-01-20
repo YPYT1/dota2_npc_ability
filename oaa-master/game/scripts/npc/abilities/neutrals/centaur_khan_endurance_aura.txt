@@ -1,0 +1,36 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Centaur Khan (Big Centaur): Vanilla Endurance Aura
+  // TODO: maybe add % attack speed bonus
+  //=================================================================================================================
+  "centaur_khan_endurance_aura"
+  {
+    //"BaseClass"                                           "ability_lua"
+    //"ScriptFile"                                          "abilities/neutrals/oaa_centaur_khan_endurance_aura.lua"
+    "AbilityTextureName"                                  "custom/centaur_khan_endurance_aura_oaa"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    //"AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    //"AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    //"SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+    //"SpellImmunityType"                                   "SPELL_IMMUNITY_ALLIES_YES"
+    "IsBreakable"                                         "1"
+
+    "MaxLevel"                                            "4"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_attack_speed" //OAA
+      {
+        "value"                                           "15 20 25 30"
+      }
+      "radius"
+      {
+        "value"                                           "1200"
+        "affected_by_aoe_increase"                        "1"
+      }
+    }
+  }
+}

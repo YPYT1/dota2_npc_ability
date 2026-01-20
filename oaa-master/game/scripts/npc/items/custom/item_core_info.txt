@@ -1,0 +1,27 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Core Points to Gold
+  //=================================================================================================================
+  "item_core_info"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "custom/core_info"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "1"
+    "ItemCost"                                            "1"
+    "ItemPurchasable"                                     "1"
+    //"ItemSellable"                                      "0"
+    "ItemKillable"                                        "1"
+    "ItemShareability"                                    "ITEM_NOT_SHAREABLE"
+    "ItemPermanent"                                       "0"
+    "ItemCastOnPickup"                                    "1"
+    "AutoPickup"                                          "1"
+  }
+
+}

@@ -1,0 +1,72 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Refresher Core
+  //=================================================================================================================
+  "item_recipe_refresher_core"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_farming_6"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "20000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_refresher_core"
+    "ItemRequirements"
+    {
+      "01"                                                "item_refresher_5;item_octarine_core_5;item_upgrade_core_5"
+    }
+  }
+
+  //=================================================================================================================
+  // Refresher Core
+  //=================================================================================================================
+  "item_refresher_core"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/refresher_core.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityTextureName"                                  "custom/refresher_core"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "180" // 180
+    "AbilitySharedCooldown"                               "refresher_oaa"
+    "AbilityManaCost"                                     "500" // 500
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "89800"
+    "ItemShopTags"                                        "health_pool;mana_pool;boost_mana;regen_mana;hard_to_tag"
+    "ItemQuality"                                         "rare"
+    "ItemAliases"                                         "refresher core"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_health"                                      "2550" // 1125 + 1125 + 300
+      "bonus_mana"                                        "2550" // 1125 + 1125 + 300
+      "bonus_damage"                                      "0"
+      "bonus_intelligence"                                "0"
+      "bonus_health_regen"                                "0"
+      "bonus_mana_regen"                                  "18.5" // 8.5 + 8.5 + 1.5
+      "cooldown_reduction"                                "30" // 25 + 5
+      "bonus_cast_range"                                  "0"
+      "hero_spell_lifesteal"                              "0"
+      "creep_spell_lifesteal"                             "0"
+    }
+  }
+}

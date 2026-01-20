@@ -1,0 +1,87 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Battlefury 2
+  //=================================================================================================================
+  "item_recipe_bfury_2"
+  {
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_2"
+
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "1500"
+    "ItemShopTags"                                        ""
+
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_bfury_2"
+    "ItemRequirements"
+    {
+      "01"                                                "item_bfury;item_upgrade_core"
+    }
+  }
+
+  //=================================================================================================================
+  // Battlefury 2
+  //=================================================================================================================
+  "item_bfury_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_bfury"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_TREE | DOTA_UNIT_TARGET_CUSTOM"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_CUSTOM"
+
+    "AbilityCastRange"                                    "350"
+    "AbilityCastPoint"                                    "0.0"
+    "AbilityCooldown"                                     "4.0"
+    "AbilitySharedCooldown"                               "cleavers"
+    "AbilityTextureName"                                  "custom/battle_fury_2"
+
+    //Spicy Parameters
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "2"
+    "UpgradesItems"                                       "item_bfury_3"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "5400"
+    "ItemShopTags"                                        "damage;health_regen;mana_regen;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "bf 2;battle fury 2;cleaver 2"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_damage"                                      "45 65 95 135 185"
+      "bonus_health_regen"                                "7.5 11 14 17 20"
+      "bonus_mana_regen"                                  "2.75 3.0 3.5 4.25 5.25"
+      "cleave_damage_percent"                             "60 65 70 75 80"
+      "cleave_damage_percent_creep"                       "40 45 50 55 60"
+      "quelling_bonus"                                    "15 25 45 75 115"
+      "quelling_bonus_ranged"                             "5"
+      "cleave_starting_width"
+      {
+        "value"                                           "150"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "cleave_ending_width"
+      {
+        "value"                                           "360"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "cleave_distance"
+      {
+        "value"                                           "650"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "upgraded_cleave_bonus"                             "25"
+      "upgraded_damage_bonus"                             "15"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Tiny: Grow (first 3 levels)
+  //=================================================================================================================
+  "tiny_grow"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE" //OAA
+    "AbilityType"                                         "ABILITY_TYPE_BASIC" //OAA
+
+    "MaxLevel"                                            "3"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_armor"                                       "5 10 15"
+      "bonus_damage"
+      {
+        "value"                                           "55 110 165"
+        "CalculateSpellDamageTooltip"                     "0"
+      }
+      "attack_speed_reduction"
+      {
+        "value"                                           "-35"
+        "special_bonus_unique_tiny_6"                     "+8"
+      }
+      "toss_bonus_damage" //OAA
+      {
+        "value"                                           "75 300 525"
+        "DamageTypeTooltip"                               "DAMAGE_TYPE_MAGICAL"
+      }
+      "move_speed"                                        "10 15 20"
+    }
+  }
+}

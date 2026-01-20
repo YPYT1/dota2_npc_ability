@@ -1,0 +1,12 @@
+"DOTAHeroes"
+{
+  //=================================================================================================================
+  // HERO: Silencer
+  //=================================================================================================================
+  "npc_dota_hero_silencer"
+  {
+    //"Ability2"                                            "silencer_glaives_of_wisdom_oaa" // replaces silencer_glaives_of_wisdom
+
+    "AttributeIntelligenceGain"                           "2.2" // 2.9
+  }
+}

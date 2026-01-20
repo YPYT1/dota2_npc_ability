@@ -1,0 +1,55 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Harpy Stormcrafter: Vanilla Chain Lightning
+  // TODO: maybe add % max or current hp dmg
+  //=================================================================================================================
+  "harpy_storm_chain_lightning"
+  {
+    //"BaseClass"                                           "ability_lua"
+    //"ScriptFile"                                          "abilities/neutrals/oaa_harpy_storm_chain_lightning.lua"
+    //"AbilityTextureName"                                  "harpy_storm_chain_lightning"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    //"SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+
+    "MaxLevel"                                            "4"
+
+    "AbilityCastRange"                                    "900"
+    "AbilityCastPoint"                                    "0.3"
+    "AbilityCastAnimation"                                "ACT_DOTA_CAST_ABILITY_1"
+
+    "AbilityCooldown"                                     "4.0"
+
+    "AbilityManaCost"                                     "60"
+    "AbilityProcsMagicStick"                              "1"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "initial_damage"//OAA
+      {
+        "value"                                           "75 150 300 600"
+      }
+      "jump_range"
+      {
+        "value"                                           "500"
+      }
+      "jump_delay"
+      {
+        "value"                                           "0.25"
+      }
+      "damage_percent_loss"
+      {
+        "value"                                           "25.0 20.0 15.0 10.0"
+      }
+      "max_targets" //OAA
+      {
+        "value"                                           "8"
+      }
+    }
+  }
+}

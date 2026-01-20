@@ -1,0 +1,109 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Shroud of Shadows
+  //=================================================================================================================
+  "item_recipe_shroud_3"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_4"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "8000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_shroud_3"
+    "ItemRequirements"
+    {
+      "01"                                                "item_shroud_2;item_upgrade_core_3"
+    }
+  }
+
+  //=================================================================================================================
+  // Shroud of Shadows (Based on Ghost Scepter)
+  //=================================================================================================================
+  "item_shroud_3"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/shroud.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO"
+    "AbilityTextureName"                                  "custom/shroud_3"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "1000 1200 1400 1600"
+    "AbilityCooldown"                                     "20.0"
+    "AbilityManaCost"                                     "75"
+    "AbilitySharedCooldown"                               "ethereal"
+
+    "MaxUpgradeLevel"                                     "4"
+    "ItemBaseLevel"                                       "3"
+    "UpgradesItems"                                       "item_shroud_4"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "16700"
+    "ItemShopTags"                                        "int;agi;str;hard_to_tag"
+    "ItemQuality"                                         "component"
+    "ItemAliases"                                         "shroud of Shadows 3;sos 3"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "01"
+      {
+
+        "bonus_all_stats"                                 "8 14 21 35"
+      }
+      "02"
+      {
+
+        "bonus_attack_speed"                              "25 30 35 40"
+      }
+      // Glimmer Cape Parameters
+      "03"
+      {
+
+        "bonus_magical_armor"                             "15 20 25 30"
+      }
+      "04"
+      {
+
+        "duration"                                        "5.0"
+      }
+      "05"
+      {
+
+        "extra_spell_damage_percent"                      "0" // Zero Spell Amp from Ghost Scepter
+      }
+      "06"
+      {
+
+        "fade_delay"                                      "0.6"
+      }
+      "07"
+      {
+
+        "active_magical_armor"                            "30 36 42 50"
+      }
+      "08"
+      {
+
+        "range_tooltip"                                   "1000 1200 1400 1600"
+      }
+    }
+  }
+}

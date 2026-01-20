@@ -1,0 +1,1051 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc32:version{c5dcef98-b629-46ab-88e3-a17c005c935e} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "electrician_base.vmat"
+								to = "materials/models/heroes/electrician/electrician_arcana/electrician_arcana_base.vmat"
+							},
+							{
+								from = "guitar.vmat"
+								to = "materials/models/heroes/electrician/electrician_arcana/electrician_arcana_guitar.vmat"
+							},
+							{
+								from = "speaker.vmat"
+								to = "materials/models/heroes/electrician/electrician_arcana/electrician_arcana_backpack.vmat"
+							},
+							{
+								from = "hair.vmat"
+								to = "materials/models/heroes/electrician/electrician_arcana/electrician_arcana_hair.vmat"
+							},
+							{
+								from = "glasses.vmat"
+								to = "materials/models/heroes/electrician/electrician_arcana/electrician_arcana_glasses.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "HitboxSetList"
+				children = 
+				[
+					{
+						_class = "HitboxSet"
+						name = "default"
+						children = 
+						[
+							{
+								_class = "Hitbox"
+								parent_bone = "root"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -19.26664, -29.101387, -58.776405 ]
+								hitbox_maxs = [ 24.828087, 34.957703, 22.343515 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "spine1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -29.129234, -20.579144, -21.165798 ]
+								hitbox_maxs = [ 34.179764, 27.846897, 18.991737 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "spine2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.835152, -23.722412, -19.512825 ]
+								hitbox_maxs = [ 33.237213, 23.72245, 11.765961 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "spine3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -64.963699, -24.954294, -17.949379 ]
+								hitbox_maxs = [ 29.984709, 26.110193, 62.421234 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "clavicle_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.718948, -14.212555, -15.842426 ]
+								hitbox_maxs = [ 24.715691, 16.835907, 10.11861 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "clavicle_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -24.715691, -16.835922, -10.232978 ]
+								hitbox_maxs = [ 10.892467, 14.212822, 23.402298 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "bicep_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -29.619843, -15.35421, -17.771505 ]
+								hitbox_maxs = [ 42.282455, 8.448448, 14.647982 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "bicep_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -37.336021, -19.900711, -14.64803 ]
+								hitbox_maxs = [ 29.655268, 15.30928, 18.830143 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "thigh_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -56.916466, -19.002739, -13.96103 ]
+								hitbox_maxs = [ 26.229193, 25.189709, 28.16777 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "elbow_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -4.718353, -4.561798, -5.210396 ]
+								hitbox_maxs = [ 31.860855, 8.448746, 6.668556 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "elbow_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -32.953594, -8.448875, -6.668653 ]
+								hitbox_maxs = [ 23.957649, 4.561661, 16.749781 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "thigh_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -23.189026, -13.327164, -28.169064 ]
+								hitbox_maxs = [ 56.915123, 19.002831, 13.96111 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "knee_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -54.078262, -17.122641, -9.173874 ]
+								hitbox_maxs = [ 8.763157, 10.260759, 19.186214 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "wrist_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -6.632523, -5.53688, -4.213966 ]
+								hitbox_maxs = [ 17.256508, 6.241005, 8.360992 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "neck1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -17.191677, -22.047745, -14.660721 ]
+								hitbox_maxs = [ 10.756237, 17.047905, 16.576691 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "wrist_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -17.25684, -8.681118, -8.361908 ]
+								hitbox_maxs = [ 7.165901, 5.536667, 4.213539 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "knee_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -24.735407, -10.26165, -24.204967 ]
+								hitbox_maxs = [ 54.078239, 17.121895, 9.172081 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "ankle_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -27.854759, -10.02685, -20.988224 ]
+								hitbox_maxs = [ 8.457511, 12.556154, 10.204006 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Mid_0_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -4.543945, -11.39051, -6.422302 ]
+								hitbox_maxs = [ 8.491219, 3.358378, 2.239273 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "head"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -24.645149, -21.812157, -8.85527 ]
+								hitbox_maxs = [ 18.039734, 21.851135, 38.108261 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "rtStaff_1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -53.09605, -31.996422, -31.512053 ]
+								hitbox_maxs = [ 81.333542, 22.386078, 49.877106 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Mid_0_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -14.46608, -26.501293, -49.072739 ]
+								hitbox_maxs = [ 16.361923, 11.390282, 9.627975 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "ankle_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -8.457163, -12.55727, -10.204037 ]
+								hitbox_maxs = [ 27.854757, 10.026089, 20.988178 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "toeBase_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -8.657885, -7.757393, -8.420115 ]
+								hitbox_maxs = [ 11.129745, 9.83604, 3.843913 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Thumb_0_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -4.062988, -4.141598, -3.693039 ]
+								hitbox_maxs = [ 13.525238, 7.008884, 4.31406 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Mid_1_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.353149, -11.390469, -6.966557 ]
+								hitbox_maxs = [ 13.30825, 2.778162, 2.173019 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "plume4_0"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ 1.892471, -4.337852, 11.551487 ]
+								hitbox_maxs = [ 21.551361, 4.907257, 37.291714 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "plume5_0"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.01918, -23.393625, -22.144278 ]
+								hitbox_maxs = [ 20.241867, 41.747185, 56.487938 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Tail14_0"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -92.199776, -10.916672, -11.115898 ]
+								hitbox_maxs = [ -21.54528, 33.312462, 33.470173 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "ring3_0"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -38.913437, -35.228195, -41.324043 ]
+								hitbox_maxs = [ -35.663643, -31.355438, -37.468903 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Mid_1_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -13.308739, -22.480137, -25.307438 ]
+								hitbox_maxs = [ 46.741966, 11.390244, 7.863121 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Thumb_0_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -13.525482, -5.318581, -4.3139 ]
+								hitbox_maxs = [ 4.02623, 4.009537, 3.693192 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "plume6_0"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -14.99823, -10.450455, -18.835251 ]
+								hitbox_maxs = [ -9.701912, -5.46328, -14.415817 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "plume9_0"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.948265, -29.107311, -17.446243 ]
+								hitbox_maxs = [ 7.261761, -25.723927, -6.626282 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "toeBase_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -11.129723, -9.836023, -3.84392 ]
+								hitbox_maxs = [ 8.657951, 7.757414, 8.420115 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "skirtL10_0"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.874832, -10.503592, -15.990028 ]
+								hitbox_maxs = [ 25.772877, 12.557354, 10.459625 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "skirtR11_0"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -4.281921, -11.588348, -18.728571 ]
+								hitbox_maxs = [ 25.375717, 11.748228, 10.086651 ]
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						name = "electrician_arcana_base"
+						filename = "models/heroes/electrician/electrician_arcana/electrician_arcana_base.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "Folder"
+						name = "elec"
+						children = 
+						[
+							{
+								_class = "AnimFile"
+								name = "bindPose"
+								children = 
+								[
+									{
+										_class = "AnimOffset"
+										translation = [ -1837.0, 0.0, -1304.0 ]
+										rotation_xyz = [ 0.0, 0.0, 135.0 ]
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/heroes/electrician/anims/bindPose.dmx"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 1440
+								framerate = 24.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "ability1_poison_touch"
+								children = 
+								[
+									{
+										_class = "AnimOffset"
+										translation = [ -1837.0, 0.0, -1304.0 ]
+										rotation_xyz = [ 0.0, 0.0, 135.0 ]
+									},
+								]
+								activity_name = "ACT_DOTA_CAST_ABILITY_1"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/heroes/electrician/anims/ability1_poison_touch.dmx"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 24
+								framerate = 24.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "attack1"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+									{
+										_class = "AnimOffset"
+										translation = [ -1837.0, 0.0, -1304.0 ]
+										rotation_xyz = [ 0.0, 0.0, 135.0 ]
+									},
+								]
+								activity_name = "ACT_DOTA_ATTACK"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/heroes/electrician/anims/attack1.dmx"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 18
+								framerate = 24.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "attack02"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+									{
+										_class = "AnimOffset"
+										translation = [ -1837.0, 0.0, -1304.0 ]
+										rotation_xyz = [ 0.0, 0.0, 135.0 ]
+									},
+								]
+								activity_name = "ACT_DOTA_ATTACK2"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/heroes/electrician/anims/attack02.dmx"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 21
+								framerate = 24.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "cast02_shallow_grave"
+								children = 
+								[
+									{
+										_class = "AnimOffset"
+										translation = [ -1837.0, 0.0, -1304.0 ]
+										rotation_xyz = [ 0.0, 0.0, 135.0 ]
+									},
+								]
+								activity_name = "ACT_DOTA_CAST_ABILITY_2"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/heroes/electrician/anims/cast02_shallow_grave.dmx"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 24
+								framerate = 24.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "cast03_shallow_grave"
+								children = 
+								[
+									{
+										_class = "AnimOffset"
+										translation = [ -1837.0, 0.0, -1304.0 ]
+										rotation_xyz = [ 0.0, 0.0, 135.0 ]
+									},
+								]
+								activity_name = "ACT_DOTA_CAST_ABILITY_3"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/heroes/electrician/anims/cast03_shallow_grave.dmx"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 24
+								framerate = 24.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "cast04_weave"
+								children = 
+								[
+									{
+										_class = "AnimOffset"
+										translation = [ -1837.0, 0.0, -1304.0 ]
+										rotation_xyz = [ 0.0, 0.0, 135.0 ]
+									},
+								]
+								activity_name = "ACT_DOTA_CAST_ABILITY_4"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/heroes/electrician/anims/cast04_weave.dmx"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 24
+								framerate = 24.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "death"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+									{
+										_class = "AnimOffset"
+										translation = [ -1837.0, 0.0, -1304.0 ]
+										rotation_xyz = [ 0.0, 0.0, 135.0 ]
+									},
+								]
+								activity_name = "ACT_DOTA_DIE"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/heroes/electrician/anims/death.dmx"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 45
+								framerate = 24.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "flail"
+								children = 
+								[
+									{
+										_class = "AnimOffset"
+										translation = [ -1837.0, 0.0, -1304.0 ]
+										rotation_xyz = [ 0.0, 0.0, 135.0 ]
+									},
+								]
+								activity_name = "ACT_DOTA_FLAIL"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/heroes/electrician/anims/flail.dmx"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 14
+								framerate = 24.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "forcestaff"
+								children = 
+								[
+									{
+										_class = "AnimOffset"
+										translation = [ -1837.0, 0.0, -1304.0 ]
+										rotation_xyz = [ 0.0, 0.0, 135.0 ]
+									},
+								]
+								activity_name = "ACT_DOTA_FORCESTAFF_STATUE"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/heroes/electrician/anims/forcestaff.dmx"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 12
+								framerate = 24.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "generic_channel"
+								children = 
+								[
+									{
+										_class = "AnimOffset"
+										translation = [ -1837.0, 0.0, -1304.0 ]
+										rotation_xyz = [ 0.0, 0.0, 135.0 ]
+									},
+								]
+								activity_name = "ACT_DOTA_CHANNEL_ABILITY_5"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/heroes/electrician/anims/generic_channel.dmx"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 48
+								framerate = 24.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "idle"
+								children = 
+								[
+									{
+										_class = "AnimOffset"
+										translation = [ -1837.0, 0.0, -1304.0 ]
+										rotation_xyz = [ 0.0, 0.0, 135.0 ]
+									},
+								]
+								activity_name = "ACT_DOTA_IDLE"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/heroes/electrician/anims/idle.dmx"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 41
+								framerate = 24.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "loadout"
+								children = 
+								[
+									{
+										_class = "AnimOffset"
+										translation = [ -1837.0, 0.0, -1304.0 ]
+										rotation_xyz = [ 0.0, 0.0, 135.0 ]
+									},
+								]
+								activity_name = "ACT_DOTA_LOADOUT"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/heroes/electrician/anims/loadout.dmx"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 41
+								framerate = 24.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "portrait"
+								children = 
+								[
+									{
+										_class = "AnimOffset"
+										translation = [ -1837.0, 0.0, -1304.0 ]
+										rotation_xyz = [ 0.0, 0.0, 135.0 ]
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/heroes/electrician/anims/portrait.dmx"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 41
+								framerate = 24.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "run"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+									{
+										_class = "AnimOffset"
+										translation = [ -1837.0, 0.0, -1304.0 ]
+										rotation_xyz = [ 0.0, 0.0, 135.0 ]
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_CL_PLAYSOUND_LOOPING"
+										event_frame = 4
+										event_keys = 
+										{
+											name = soundevent:"Electrician.Footsteps"
+											attachment = null
+											emitFromWorld = false
+											tags = null
+										}
+									},
+								]
+								activity_name = "ACT_DOTA_RUN"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/heroes/electrician/anims/run.dmx"
+								import_bone_scales = false
+								start_frame = 2
+								end_frame = 20
+								framerate = 3.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "spawn"
+								children = 
+								[
+									{
+										_class = "AnimOffset"
+										translation = [ -1837.0, 0.0, -1304.0 ]
+										rotation_xyz = [ 0.0, 0.0, 135.0 ]
+									},
+								]
+								activity_name = "ACT_DOTA_SPAWN"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/heroes/electrician/anims/spawn.dmx"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 27
+								framerate = 24.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "stun"
+								children = 
+								[
+									{
+										_class = "AnimOffset"
+										translation = [ -1837.0, 0.0, -1304.0 ]
+										rotation_xyz = [ 0.0, 0.0, 135.0 ]
+									},
+								]
+								activity_name = "ACT_DOTA_DISABLED"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/heroes/electrician/anims/stun.dmx"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 40
+								framerate = 24.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "teleport"
+								children = 
+								[
+									{
+										_class = "AnimOffset"
+										translation = [ -1837.0, 0.0, -1304.0 ]
+										rotation_xyz = [ 0.0, 0.0, 135.0 ]
+									},
+								]
+								activity_name = "ACT_DOTA_TELEPORT"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/heroes/electrician/anims/teleport.dmx"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 48
+								framerate = 24.0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "victory"
+								children = 
+								[
+									{
+										_class = "AnimOffset"
+										translation = [ -1837.0, 0.0, -1304.0 ]
+										rotation_xyz = [ 0.0, 0.0, 135.0 ]
+									},
+								]
+								activity_name = "ACT_DOTA_VICTORY"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								source_filename = "models/heroes/electrician/anims/victory.dmx"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 158
+								framerate = 24.0
+								reverse = false
+							},
+						]
+					},
+				]
+				default_root_bone_name = ""
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+		importer_notes = "Imported from VMDL"
+	}
+}

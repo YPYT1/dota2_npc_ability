@@ -1,0 +1,49 @@
+"DOTAAbilities"
+{
+  "zuus_arc_lightning"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "800"
+    "AbilityCastPoint"                                    "0.2"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "75 85 95 105 115 125"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "AbilityCooldown"
+      {
+        "value"                                           "1.6"
+        "special_bonus_unique_zeus_6"                     "-0.4"
+      }
+      "arc_damage" //OAA
+      {
+        "value"                                           "90 120 150 180 360 540"
+        "special_bonus_unique_zeus_2"                     "+30"
+      }
+      "radius"
+      {
+        "value"                                           "450"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "jump_count"                                        "5 7 9 11 13 15"
+      "jump_delay"                                        "0.25"
+    }
+  }
+}

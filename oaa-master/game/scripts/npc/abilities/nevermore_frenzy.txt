@@ -1,0 +1,51 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Shadow Fiend: Feast of Souls
+  //=================================================================================================================
+  "nevermore_frenzy"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "21 20 19 18 17 16" //OAA
+    "AbilityManaCost"                                     "60 65 70 75 80 85"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_attack_speed"
+      {
+        "value"                                           "40 55 70 85 100 115"
+        "special_bonus_unique_nevermore_4"                "+30"
+      }
+      "bonus_move_speed"
+      {
+        "value"                                           "5 7 9 11 13 15"
+      }
+      "cast_speed_pct" //OAA
+      {
+        "value"                                           "100"
+        "special_bonus_unique_nevermore_frenzy_castspeed"  "+20"
+      }
+      "cast_speed_pct_tooltip" //OAA
+      {
+        "value"                                           "0"
+        "special_bonus_unique_nevermore_frenzy_castspeed"  "=120"
+      }
+      "duration"                                          "8"
+      "soul_cost"                                         "5"
+      "max_soul_increase"                                 "5"
+    }
+  }
+
+}

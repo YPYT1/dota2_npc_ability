@@ -1,0 +1,33 @@
+"DOTAAbilities"
+{
+  //////
+  // Insta-kill Dagon for Developers to help in testing
+  //////
+  "item_devDagon"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/dev_dagon.lua"
+    "AbilityTextureName"                                  "custom/dev_dagon"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_BOTH"
+    "AbilityUnitTargetFlags"                              "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "20000"
+    "AbilityCooldown"                                     "0.0"
+    "AbilityManaCost"                                     "0"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "1"
+    "ItemShopTags"                                        "damage;int;str;agi;hard_to_tag"
+    "ItemQuality"                                         "rare"
+    "ItemAliases"                                         "super dagon"
+    "ItemPurchasable"                                     "0"
+    "SideShop"                                            "0"
+  }
+}

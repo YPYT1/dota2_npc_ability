@@ -1,0 +1,76 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Chen: Hand of God
+  //=================================================================================================================
+  "chen_hand_of_god"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityType"                                         "ABILITY_TYPE_ULTIMATE"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ALLIES_YES"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+
+    "MaxLevel"                                            "5"
+    "RequiredLevel"                                       "6"
+    "LevelsBetweenUpgrades"                               "6"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastPoint"                                    "0.3"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "200 300 400 500 600"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "AbilityCooldown" //OAA
+      {
+        "value"                                           "120 110 100 90 80"
+        "special_bonus_scepter"                           "-40"
+      }
+      "heal_amount" //OAA
+      {
+        "value"                                           "200 400 600 1200 2200"
+      }
+      "hot_duration"                                      "10"
+      "heal_per_second" //OAA
+      {
+        "value"                                           "20 40 60 120 220"
+      }
+      "ancient_creeps_scepter"
+      {
+        "special_bonus_shard"                             "1 2 3 4 5"
+      }
+      "does_purge"
+      {
+        "special_bonus_unique_chen_12"                    "+1"
+      }
+      "full_heal_on_chen_and_creeps"
+      {
+        "special_bonus_unique_chen_2"                     "=1"
+      }
+      "AbilityChannelTime"
+      {
+        "special_bonus_scepter"                           "=6"
+      }
+      "debuff_immune_radius"
+      {
+        "special_bonus_scepter"                           "=800"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "debuff_immune_resist"
+      {
+        "special_bonus_scepter"                           "60"
+      }
+      "nearby_hot_boost"
+      {
+        "special_bonus_scepter"                           "200"
+      }
+    }
+  }
+}

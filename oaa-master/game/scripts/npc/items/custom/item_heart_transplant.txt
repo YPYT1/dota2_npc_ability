@@ -1,0 +1,90 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Heart Transplant 1
+  //=================================================================================================================
+  "item_recipe_heart_transplant"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_4"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "8000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_heart_transplant"
+    "ItemRequirements"
+    {
+      "01"                                                "item_heart_3;item_upgrade_core_3"
+    }
+  }
+
+  //=================================================================================================================
+  // Heart Transplant 1
+  //=================================================================================================================
+  "item_heart_transplant"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/heart_transplant.lua"
+    "AbilityTextureName"                                  "custom/heart_transplant"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "800"
+    "AbilityCooldown"                                     "0.1"
+    "AbilitySharedCooldown"                               "transplant"
+    //"AbilityChannelTime"                                  "7.0"
+    "AbilityManaCost"                                     "0"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "18100"
+    "ItemShopTags"                                        "str;regen_health;health_pool"
+    "ItemQuality"                                         "rare"
+    "ItemAliases"                                         "transplant;heart transplant"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    "MaxUpgradeLevel"                                     "2"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_heart_transplant_2"
+
+    // "IsTempestDoubleClonable"                          "0"
+
+    "precache"
+    {
+      "particle"                                          "particles/items/heart_transplant/heart_transplant.vpcf"
+      "particle"                                          "particles/items/heart_transplant/heart_transplant_d.vpcf"
+      "particle"                                          "particles/items/heart_transplant/heart_transplant_end.vpcf"
+    }
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_strength"                                    "55 75" // same as Heart lvls 4-5
+      "bonus_health"                                      "300 550" // same as Heart lvls 4-5
+      "health_regen_pct"                                  "1.5" // same as Heart lvls 4-5
+      "cooldown"                                          "5"
+      "transplant_bonus_strength"                         "50 70"
+      "transplant_bonus_health"                           "300 550"
+      "transplant_health_regen_pct"                       "1.3"
+      "transplant_max_range"                              "1000" // this is affected by cast range bonuses, not aoe increase
+      "transplant_max_duration"                           "12"
+    }
+  }
+}

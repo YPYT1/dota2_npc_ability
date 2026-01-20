@@ -1,0 +1,65 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Heart of Tarrasque 4
+  //=================================================================================================================
+  "item_recipe_heart_4"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_4"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "8000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_heart_4"
+    "ItemRequirements"
+    {
+      "01"                                                "item_heart_3;item_upgrade_core_3"
+    }
+  }
+
+  //=================================================================================================================
+  // Heart of Tarrasque 4
+  //=================================================================================================================
+  "item_heart_4"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_heart"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "custom/heart_4"
+
+    // Spicy Parameters
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "4"
+    "UpgradesItems"                                       "item_heart_5"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "18100"
+    "ItemShopTags"                                        "str;regen_health;health_pool"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "hot 4;heart of tarrasque 4;heart 4"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_strength"                                    "40 45 55 70 90"
+      "hp_regen"                                          "1"
+      "missing_health_regen"                              "1.5"
+    }
+  }
+}

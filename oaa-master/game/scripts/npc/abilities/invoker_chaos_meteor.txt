@@ -1,0 +1,83 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Invoker: Chaos Meteor
+  //=================================================================================================================
+  "invoker_chaos_meteor"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES"
+    "MaxLevel"                                            "1" // MaxLevel: 11
+
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "700"
+    "AbilityCastPoint"                                    "0.05"
+    "AbilityManaCost"                                     "200"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "AbilityCooldown" //OAA
+      {
+        "value"                                           "35"
+      }
+      "land_time"                                         "1.3"
+      "area_of_effect"
+      {
+        "value"                                           "275"
+        "affected_by_aoe_increase"                        "1"
+        "special_bonus_unique_invoker_chaos_meteor_size"  "+25"
+      }
+      "travel_distance" //OAA
+      {
+        "value"                                           "465 615 765 915 1065 1215 1365 1515 1665 1815 1965"
+        "levelkey"                                        "wexlevel"
+      }
+      "travel_speed"
+      {
+        "value"                                           "300"
+      }
+      "damage_interval"
+      {
+        "value"                                           "0.5"
+        "CalculateSpellDamageTooltip"                     "0"
+        "DamageTypeTooltip"                               "DAMAGE_TYPE_NONE"
+      }
+      "vision_distance"
+      {
+        "value"                                           "500"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "end_vision_duration"                               "3.0"
+      "main_damage" //OAA
+      {
+        "value"                                           "55 90 125 160 195 230 265 335 405 475 615"
+        "levelkey"                                        "exortlevel"
+      }
+      "burn_duration"                                     "3.0"
+      "burn_dps" //OAA
+      {
+        "value"                                           "10 17 24 31 38 45 52 66 80 94 122"
+        "levelkey"                                        "exortlevel"
+        "CalculateSpellDamageTooltip"                     "1"
+        "DamageTypeTooltip"                               "DAMAGE_TYPE_MAGICAL"
+      }
+      "meteor_count"
+      {
+        "value"                                           "1"
+        "special_bonus_unique_invoker_additional_chaos_meteors"  "+2"
+      }
+      "stun_duration"
+      {
+        "value"                                           "0"
+      }
+    }
+  }
+}

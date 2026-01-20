@@ -1,0 +1,73 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Blade Mail
+  //=================================================================================================================
+  "item_recipe_blade_mail"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    //"AbilityTextureName"                                  "custom/recipe/recipe_1"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "450" //OAA
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_blade_mail"
+    "ItemRequirements"
+    {
+      "01"                                                "item_broadsword;item_chainmail"
+    }
+  }
+
+  //=================================================================================================================
+  // Blade Mail
+  //=================================================================================================================
+  "item_blade_mail"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    //"ScriptFile"                                          "items/blade_mail.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+    //"AbilityTextureName"                                  "custom/blade_mail_1"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "25.0"
+    "AbilitySharedCooldown"                               "blademail"
+    "AbilityManaCost"                                     "25"
+
+    // Spicy Parameters
+    //-------------------------------------------------------------------------------------------------------------
+    //"MaxUpgradeLevel"                                     "5"
+    //"ItemBaseLevel"                                       "1"
+    //"UpgradesItems"                                       "item_blade_mail;item_blade_mail_2;item_blade_mail_3;item_blade_mail_4"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "2000" //OAA
+    "ItemShopTags"                                        "damage;armor;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "bm;blade mail;blademail"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_damage"                                      "15" // Broadsword (15)
+      "bonus_armor"                                       "5" //OAA, Chainmail (4)
+      "bonus_intellect"                                   "0"
+      "duration"                                          "5.5"
+      "passive_reflection_constant"                       "10"
+      "passive_reflection_pct"                            "15"
+      "active_reflection_pct"                             "80" //OAA
+    }
+  }
+}

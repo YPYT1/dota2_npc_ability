@@ -1,0 +1,81 @@
+"DOTAAbilities"
+{
+  "item_recipe_travel_boots"                              "REMOVE"
+  "item_travel_boots"                                     "REMOVE"
+  "item_recipe_travel_boots_2"                            "REMOVE"
+  "item_travel_boots_2"                                   "REMOVE"
+
+  //=================================================================================================================
+  // Recipe: Travel Boots (OAA rework)
+  //=================================================================================================================
+  "item_recipe_travel_boots_oaa"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_1"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "500"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_travel_boots_oaa"
+    "ItemRequirements"
+    {
+      "01"                                                "item_boots"
+    }
+  }
+
+  //=================================================================================================================
+  // Travel Boots (OAA rework)
+  //=================================================================================================================
+  "item_travel_boots_oaa"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/greater_travel_boots.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_BUILDING"
+    "AbilityUnitTargetFlags"                              "DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+    "AbilityTextureName"                                  "item_travel_boots"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "90"
+    "AbilitySharedCooldown"                               "travel"
+    "AbilityChannelTime"                                  "3.0"
+    "AbilityManaCost"                                     "75"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "1000"
+    "ItemShopTags"                                        "teleport;move_speed"
+    "ItemQuality"                                         "common"
+    "ItemAliases"                                         "bot;boots of travel"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    "SpeciallyBannedFromNeutralSlot"                      "1"
+
+    "MaxUpgradeLevel"                                     "1"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_greater_travel_boots"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_movement_speed"                              "50" // you get these boots a lot earlier,
+      "bonus_damage_during_duels"                         "0"
+      "bonus_spell_amp_during_duels"                      "0"
+      "bonus_boss_damage"                                 "0"
+    }
+  }
+}

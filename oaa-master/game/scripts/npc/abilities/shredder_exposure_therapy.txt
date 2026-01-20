@@ -1,0 +1,27 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Timbersaw: Exposure Therapy (Innate)
+  //=================================================================================================================
+  "shredder_exposure_therapy"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_INNATE_UI | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
+    "MaxLevel"                                            "6" // same as Dependent ability (Chakram) + 1
+    "DependentOnAbility"                                  "shredder_chakram"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "mana_restore"                                      "4 6 8 10 12 14"
+      "health_restore" //OAA
+      {
+        "value"                                           "0"
+        "special_bonus_unique_timbersaw_exposure_therapy_health"  "+20"
+      }
+    }
+  }
+}

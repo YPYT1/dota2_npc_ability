@@ -1,0 +1,91 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Crimson Pipe
+  //=================================================================================================================
+  "item_recipe_crimson_pipe"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_farming_6"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "20000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_crimson_pipe"
+
+    "ItemRequirements"
+    {
+      "01"                                                "item_crimson_guard_5;item_pipe_5;item_upgrade_core_5"
+    }
+  }
+
+  //=================================================================================================================
+  // Crimson Pipe
+  //=================================================================================================================
+  "item_crimson_pipe"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+    "AbilityTextureName"                                  "item_pipe"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "20"
+    "AbilityCastRange"                                    "1200"
+    "AbilityManaCost"                                     "225" // 75 + 150
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "86850"
+    "ItemShopTags"                                        "armor;boost_armor;regen_health;block;health_pool;boost_magic_resist"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "crimson pipe"
+    "ItemAlertable"                                       "1"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_health"                                      "1250" // 950 + 300
+      "bonus_health_regen"                                "43" // 24 + 16 + 3
+      "bonus_all_stats"                                   "0"
+      "bonus_armor"                                       "22" // 17 + 5
+      "magic_resistance"                                  "30" // 28 + 2
+
+      "aura_radius"
+      {
+        "value"                                           "1200"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "aura_magic_resistance"                             "18" // 16 + 2
+      "aura_health_regen"                                 "13.5" // 10.5 + 3
+      "aura_block_damage_melee"                           "325" // 275 + 50
+      "aura_block_damage_ranged"                          "225" // 190 + 35
+      "block_chance"                                      "60" // 60
+
+      "effect_radius"
+      {
+        "value"                                           "1200"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "block_damage_active"                               "320" // 270 + 50
+      "max_hp_pct_as_damage_block"                        "2.2"
+      "block_chance_active"                               "100"
+      "barrier_magic_damage_block"                        "1925" // 1425 + 500
+      "duration"                                          "8" // 7 or 8
+    }
+  }
+}

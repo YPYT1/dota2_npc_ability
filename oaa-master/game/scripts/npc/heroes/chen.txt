@@ -1,0 +1,13 @@
+"DOTAHeroes"
+{
+  //=================================================================================================================
+  // HERO: Chen
+  //=================================================================================================================
+  "npc_dota_hero_chen"
+  {
+    "Ability3"                                            "chen_divine_favor_oaa" // replaces chen_divine_favor
+    "Ability5"                                            "chen_divine_favor" // replaces generic_hidden
+
+    "AttributeStrengthGain"                               "2.3" // 2.0
+  }
+}

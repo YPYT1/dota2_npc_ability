@@ -1,0 +1,65 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Queen of Pain: Sonic Wave
+  //=================================================================================================================
+  "queenofpain_sonic_wave"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityType"                                         "ABILITY_TYPE_ULTIMATE"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_YES"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_PURE"
+
+    "MaxLevel"                                            "5"
+    "RequiredLevel"                                       "6"
+    "LevelsBetweenUpgrades"                               "6"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "700"
+    "AbilityCastPoint"                                    "0.452"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "250 400 550 700 850"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "starting_aoe"
+      {
+        "value"                                           "100"
+      }
+      "distance"
+      {
+        "value"                                           "900"
+      }
+      "final_aoe"
+      {
+        "value"                                           "450"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "speed"                                             "900"
+      "damage" //OAA
+      {
+        "value"                                           "325 525 725 1125 1525"
+        "special_bonus_unique_queen_of_pain_7"            "+250"
+      }
+      "tick_rate"                                         "0.1"
+      "knockback_distance"
+      {
+        "value"                                           "350"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "knockback_duration"                                "1.4"
+      "AbilityCooldown" //OAA
+      {
+        "value"                                           "90 85 80 75 70"
+        "special_bonus_unique_queen_of_pain_3"            "-35"
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Mask of Madness
+  //=================================================================================================================
+  "item_recipe_mask_of_madness"
+  {
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+
+    "ItemCost"                                            "0"
+    "ItemShopTags"                                        ""
+
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_mask_of_madness"
+    "ItemRequirements"
+    {
+      "01"                                                "item_lifesteal;item_broadsword"
+    }
+  }
+
+  //=================================================================================================================
+  // Mask of Madness
+  //=================================================================================================================
+  "item_mask_of_madness"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "16.0"
+    //"AbilitySharedCooldown"                               "madness"
+    "AbilityManaCost"                                     "25"
+
+    // Spicy Parameters
+    //-------------------------------------------------------------------------------------------------------------
+    //"MaxUpgradeLevel"                                     "5"
+    //"ItemBaseLevel"                                       "1"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "1900"
+    "ItemShopTags"                                        "unique;hard_to_tag"
+    "ItemQuality"                                         "artifact"
+    "ItemAliases"                                         "mom;mask of madness"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_ALWAYS"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_damage"                                      "20"
+      "lifesteal_percent"                                 "24"
+      "berserk_bonus_attack_speed"                        "100"
+      "berserk_bonus_movement_speed"                      "25"
+      "berserk_armor_reduction"                           "5" //OAA
+      "berserk_duration"                                  "6.0"
+    }
+  }
+}

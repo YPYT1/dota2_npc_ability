@@ -1,0 +1,71 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Sonic
+  //=================================================================================================================
+  "item_recipe_sonic"
+  {
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_4"
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "8000"
+    "ItemShopTags"                                        ""
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_sonic"
+    "ItemRequirements"
+    {
+      "01"                                                "item_greater_phase_boots_3;item_upgrade_core_3"
+      "02"                                                "item_greater_power_treads_2;item_upgrade_core_3"
+      "03"                                                "item_greater_boots_of_bearing_2;item_upgrade_core_3"
+      "04"                                                "item_greater_travel_boots_2;item_upgrade_core_3"
+      "05"                                                "item_greater_guardian_greaves_2;item_upgrade_core_3"
+    }
+  }
+
+  //=================================================================================================================
+  // Sonic
+  //=================================================================================================================
+  "item_sonic"
+  {
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/sonic.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+    "AbilityTextureName"                                  "custom/sonic_2"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+
+    "AbilityManaCost"                                     "50"
+    "AbilityCooldown"                                     "15"
+    "AbilitySharedCooldown"                               "sonic"
+
+    "MaxUpgradeLevel"                                     "2"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_sonic_2"
+
+    "ItemCost"                                            "14000"
+    "ItemShopTags"                                        "agi;attack_speed;move_speed"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "sonic"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    "SpeciallyBannedFromNeutralSlot"                      "1"
+
+    "AbilityValues"
+    {
+      "bonus_movement_speed"                              "75 80"
+      "bonus_attack_speed"                                "40 45"
+      "bonus_agility"                                     "50 70"
+      "bonus_damage"                                      "80 120"
+      "active_speed_bonus"                                "35 40"
+      "active_cast_speed"                                 "20 22"
+      "duration"                                          "5"
+    }
+
+    "precache"
+    {
+      "particle"                                          "particles/units/heroes/hero_dark_seer/dark_seer_surge.vpcf"
+      "soundfile"                                         "soundevents/game_sounds_heroes/game_sounds_dark_seer.vsndevts"
+    }
+  }
+}

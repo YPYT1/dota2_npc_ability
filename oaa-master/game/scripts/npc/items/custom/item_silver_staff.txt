@@ -1,0 +1,79 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Silver Staff
+  //=================================================================================================================
+  "item_recipe_silver_staff"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_3"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "3500"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_silver_staff"
+    "ItemRequirements"
+    {
+      "01"                                                "item_spirit_vessel_2;item_upgrade_core_2"
+    }
+  }
+
+  //=================================================================================================================
+  // Silver Staff - based on Spirit Vessel and Silver Edge
+  //=================================================================================================================
+  "item_silver_staff"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/silver_staff.lua"
+    "AbilityTextureName"                                  "custom/dragonstaff_3"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_PURE"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+
+    "AbilityCooldown"                                     "20"
+    "AbilitySharedCooldown"                               "silver_staff"
+    "AbilityCastRange"                                    "950 1000 1050"
+    "AbilityManaCost"                                     "75"
+
+    // Spicy Parameters
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_silver_staff_2"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "7725"
+    "ItemShopTags"                                        "regen_mana;armor;boost_health"
+    "ItemQuality"                                         "rare"
+    "ItemAliases"                                         "silver staff; break staff; dragon staff"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_health"                                      "625 825 1075"
+      "bonus_mana_regen"                                  "2.5 3.25 4.25"
+      "bonus_all_stats"                                   "0"
+      "bonus_armor"                                       "5 8 12"
+      "base_damage"                                       "55 85 125"
+      "max_hp_damage"                                     "3.5 4 4.5"
+      "duration"                                          "4.5 5.0 5.5"
+    }
+  }
+}

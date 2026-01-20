@@ -1,0 +1,141 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Urn of Sorcery
+  //=================================================================================================================
+  "item_recipe_urn_of_sorcery"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_2"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "1500"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_urn_of_sorcery"
+    "ItemRequirements"
+    {
+      "01"                                                "item_magic_wand;item_upgrade_core"
+
+    }
+  }
+
+  //=================================================================================================================
+  // URN of Sorcery
+  //=================================================================================================================
+  "item_urn_of_sorcery"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/urn_of_sorcery.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityTextureName"                                  "custom/urn_of_sorcery_1"
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "13.0"
+    "AbilitySharedCooldown"                               "urn"
+    "AbilityCastRange"                                    "950"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "1960"
+    "ItemShopTags"                                        "regen_health;regen_mana;boost_health;boost_mana;int;agi;str"
+    "ItemQuality"                                         "common"
+    "ItemAliases"                                         "urn of sorcery;melon"
+    "ItemRequiresCharges"                                 "1"
+    "ItemDisplayCharges"                                  "1"
+
+    "MaxUpgradeLevel"                                     "4"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_urn_of_sorcery_2"
+
+    "ItemAlertable"                                       "1"
+
+    //Parameters
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "01"
+      {
+
+        "max_charges"                                     "20 24 28 32"
+      }
+      "02"
+      {
+
+        "charge_radius"                                   "1200"
+      }
+      "03"
+      {
+
+        "bonus_all_stats"                                 "12 24 36 48"
+      }
+      "04"
+      {
+
+        "mana_regen"                                      "2 3 4 6"
+      }
+      "05"
+      {
+
+        "bonus_armor"                                     "7 12 18 25"
+      }
+      "06"
+      {
+
+        "soul_damage_interval"                            "1"
+      }
+      "07"
+      {
+
+        "soul_heal_amount"                                "400 700 1000 1300"
+      }
+      "08"
+      {
+
+        "soul_damage_amount"                              "150 250 350 400"
+      }
+      "09"
+      {
+
+        "soul_heal_duration"                              "8.0"
+      }
+      "10"
+      {
+
+        "soul_damage_duration"                            "8.0"
+      }
+      "11"
+      {
+
+        "soul_release_radius"                             "950"
+      }
+      "12"
+      {
+
+        "aura_health_regen"                               "4 9 14 20"
+      }
+      "13"
+      {
+
+        "aura_radius"                                     "900"
+      }
+    }
+
+    "precache"
+    {
+      "particle"                                          "particles/items2_fx/urn_of_shadows_heal.vpcf"
+      "particle"                                          "particles/items2_fx/urn_of_shadows_damage.vpcf"
+      "soundfile"                                         "soundevents/game_sounds_items.vsndevts"
+    }
+  }
+}

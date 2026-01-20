@@ -1,0 +1,6 @@
+//===================================================================
+// Stonework Pendant
+//===================================================================
+"DOTA_Tooltip_ability_item_stonework_pendant"                                   "Stonework Pendant"
+"DOTA_Tooltip_ability_item_stonework_pendant_Description"                       "<h1>Passive: Blood Magic</h1>Spells now cost health equal to %hp_cost_multiplier% times their mana cost, but all your mana gets turned into health and all your mana regen gets turned into health regen."
+"DOTA_Tooltip_ability_item_stonework_pendant_Lore"                              "You CAN get blood from a stone."

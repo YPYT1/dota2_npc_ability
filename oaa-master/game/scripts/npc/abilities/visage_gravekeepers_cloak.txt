@@ -1,0 +1,64 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Visage: Gravekeeper's Cloak
+  //=================================================================================================================
+  "visage_gravekeepers_cloak"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    "AbilityValues"
+    {
+      "max_layers"
+      {
+        "value"                                           "4"
+        //"special_bonus_unique_visage_oaa_6"               "+4"
+      }
+      "damage_reduction"
+      {
+        "value"                                           "8 12 16 20 24 28"
+      }
+      "recovery_time" //OAA
+      {
+        "value"                                           "7 6 5 4 3 3"
+        "special_bonus_unique_visage_cloak_recovery_time"  "-1.5"
+      }
+      "minimum_damage" //OAA
+      {
+        "value"                                           "40 50 60 70 90 130"
+        "special_bonus_unique_visage_oaa_1"               "+70"
+      }
+      "radius" //OAA
+      {
+        "affected_by_aoe_increase"                        "1"
+        "value"                                           "1200"
+      }
+      "max_damage_reduction"
+      {
+        "value"                                           "80"
+      }
+      "shard_hp_restoration_pct"
+      {
+        "special_bonus_shard"                             "25"
+      }
+      "shard_cooldown" //OAA
+      {
+        "special_bonus_shard"                             "35"
+      }
+      "shard_manacost"
+      {
+        "special_bonus_shard"                             "125"
+      }
+      "armor"
+      {
+        "special_bonus_unique_visage_5"                   "15"
+      }
+    }
+  }
+}

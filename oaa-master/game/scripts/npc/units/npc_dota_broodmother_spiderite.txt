@@ -1,0 +1,82 @@
+"DOTAUnits"
+{
+  //=================================================================================
+  // Spiderite
+  //=================================================================================
+  "npc_dota_broodmother_spiderite"
+  {
+    // General
+    //
+    "BaseClass"                                           "npc_dota_broodmother_spiderling"
+    "Model"                                               "models/heroes/broodmother/spiderling.vmdl"
+    "SoundSet"                                            "0"
+    "ModelScale"                                          "0.23"
+    "Level"                                               "2"
+    "IsSummoned"                                          "1"
+    "SelectionGroup"                                      "Spiderite"
+    "UnitLabel"                                           "spiderite"
+
+    // Abilities
+    //----------------------------------------------------------------
+    "Ability1"                                            ""      // Ability 1.
+    "Ability2"                                            ""      // Ability 2.
+    "Ability3"                                            ""      // Ability 3.
+    "Ability4"                                            ""      // Ability 4.
+    "Ability5"                                            ""      // Ability 5.
+    "Ability6"                                            ""      // Ability 6 - Extra.
+    "Ability7"                                            ""      // Ability 7 - Extra.
+    "Ability8"                                            ""      // Ability 8 - Extra.
+
+    // Armor
+    //----------------------------------------------------------------
+    "ArmorPhysical"                                       "0"      // Physical protection.
+    "MagicalResistance"                                   "25"    // Magical protection.
+
+    // Attack
+    //----------------------------------------------------------------
+    "AttackCapabilities"                                  "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageMin"                                     "9"    // Damage range min.
+    "AttackDamageMax"                                     "10"    // Damage range max.
+    "AttackRate"                                          "1.2"    // Speed of attack.
+    "AttackAnimationPoint"                                "0.5"    // Normalized time in animation cycle to attack.
+    "AttackAcquisitionRange"                              "500"    // Range within a target can be acquired.
+    "AttackRange"                                         "100"    // Range within a target can be attacked.
+    "ProjectileModel"                                     ""      // Particle system model for projectile.
+    "ProjectileSpeed"                                     ""      // Speed of projectile.
+
+    // Bounty
+    //----------------------------------------------------------------
+    "BountyXP"                                            "9"    // OAA
+    "BountyGoldMin"                                       "9"    // OAA
+    "BountyGoldMax"                                       "9"    // OAA
+
+    // Bounds
+    //----------------------------------------------------------------
+    "BoundsHullName"                                      "DOTA_HULL_SIZE_SMALL"      // Hull type used for navigation/locomotion.
+    "HealthBarOffset"                                     "140"
+
+    // Movement
+    //----------------------------------------------------------------
+    "MovementCapabilities"                                "DOTA_UNIT_CAP_MOVE_GROUND"      // Type of locomotion - ground, air
+    "MovementSpeed"                                       "350"    // Speed
+    "MovementTurnRate"                                    "0.5"    // Turning rate.
+
+    // Status
+    //----------------------------------------------------------------
+    "StatusHealth"                                        "120"
+    "StatusHealthRegen"                                   "2.0"    // Health regeneration rate.
+    "StatusMana"                                          "0"      // Base mana.
+    "StatusManaRegen"                                     "0"      // Mana regeneration rate.
+
+    // Team
+    //----------------------------------------------------------------
+    "TeamName"                                            "DOTA_TEAM_GOODGUYS"      // Team name.
+    "UnitRelationshipClass"                               "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    // Vision
+    //----------------------------------------------------------------
+    "VisionDaytimeRange"                                  "400"    // Range of vision during day light.
+    "VisionNighttimeRange"                                "400"    // Range of vision at night time.
+  }
+
+}

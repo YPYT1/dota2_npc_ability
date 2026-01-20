@@ -1,0 +1,74 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Pangolier: Swashbuckle
+  //=================================================================================================================
+  "pangolier_swashbuckle"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_VECTOR_TARGETING"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_YES"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_PHYSICAL"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastPoint"                                    "0.15"
+    "AbilityCastRange"                                    "575 650 725 800 875 950"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "75 80 85 90 95 100"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "AbilityCooldown" //OAA
+      {
+        "value"                                           "14 13 12 11 10 9"
+        "special_bonus_unique_pangolier_4"                "-2"
+      }
+      "dash_range"                                        "575 650 725 800 875 950"
+      "range"
+      {
+        "value"                                           "850"
+        "special_bonus_unique_pangolier"                  "+200"
+      }
+      "damage"
+      {
+        "value"                                           "35 65 95 125 250 375"
+        "CalculateSpellDamageTooltip"                     "0"
+      }
+      "attack_damage" // percentage of attack damage
+      {
+        "value"                                           "0"
+        "special_bonus_unique_pangolier_3"                "+20"
+      }
+      "dash_speed"                                        "2000"
+      "attack_interval"                                   "0.1"
+      "start_radius"
+      {
+        "value"                                           "155"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "end_radius"
+      {
+        "value"                                           "155"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "strikes"
+      {
+        "value"                                           "3"
+      }
+      "procs_onhit_effects"                               "1"
+      "slow_duration"                                     "0.4"
+      "slow_percent"                                      "100"
+      "damage_penalty"                                    "25" // Aghanim's Scepter Swashbuckle damage, if changing this change scepter_damage_outgoing_tooltip in Shield Crash
+    }
+  }
+}

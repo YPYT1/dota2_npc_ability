@@ -1,0 +1,65 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Heart of Tarrasque 2
+  //=================================================================================================================
+  "item_recipe_heart_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_2"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "1500"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_heart_2"
+    "ItemRequirements"
+    {
+      "01"                                                "item_heart;item_upgrade_core"
+    }
+  }
+
+  //=================================================================================================================
+  // Heart of Tarrasque 2
+  //=================================================================================================================
+  "item_heart_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_heart"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "custom/heart_2"
+
+    // Spicy Parameters
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "2"
+    "UpgradesItems"                                       "item_heart_3"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "6600"
+    "ItemShopTags"                                        "str;regen_health;health_pool"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "hot 2;heart of tarrasque 2;heart 2"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_strength"                                    "40 45 55 70 90"
+      "hp_regen"                                          "1"
+      "missing_health_regen"                              "1.5"
+    }
+  }
+}

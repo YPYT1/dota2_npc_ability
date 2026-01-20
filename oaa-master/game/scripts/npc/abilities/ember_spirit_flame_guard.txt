@@ -1,0 +1,62 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Ember Spirit: Flame Guard
+  //=================================================================================================================
+  "ember_spirit_flame_guard"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "500" // OAA, same as active_radius
+    "AbilityCastPoint"                                    "0"
+
+    // Time
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "25 24 23 22 21 20" //OAA
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "65 80 95 110 125 140"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "duration"                                          "18" //OAA
+      "passive_radius" // unused
+      {
+        "value"                                           "150"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "tick_interval"                                     "0.2"
+      "damage_per_second"
+      {
+        "value"                                           "20 30 40 50 100 150"
+        "special_bonus_unique_ember_spirit_3"             "+100%"
+      }
+      "linger_duration"                                   "0.5"
+      "radius"
+      {
+        "value"                                           "500"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "shield_pct_absorb"                                 "70"
+      "absorb_amount" //OAA
+      {
+        "value"                                           "60 120 240 480 960 1440"
+        "special_bonus_unique_ember_spirit_1"             "+240"
+      }
+    }
+  }
+}

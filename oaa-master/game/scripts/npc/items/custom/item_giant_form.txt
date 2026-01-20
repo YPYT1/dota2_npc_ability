@@ -1,0 +1,106 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Giant Form
+  //=================================================================================================================
+  "item_recipe_giant_form"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_4"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "8000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_giant_form"
+    "ItemRequirements"
+    {
+      "01"                                                "item_bfury_3;item_upgrade_core_3"
+    }
+  }
+
+  //=================================================================================================================
+  // Giant Form
+  //=================================================================================================================
+  "item_giant_form"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/giant_form.lua"
+    "AbilityTextureName"                                  "custom/giant_form_1"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_PHYSICAL"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+
+    "AbilityManaCost"                                     "75"
+    "AbilityCooldown"                                     "16"
+    "AbilitySharedCooldown"                               "giant_form"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "16900"
+    "ItemShopTags"                                        "damage"
+    "ItemQuality"                                         "artifact"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+    "ItemAliases"                                         "giant form;giant"
+
+    "MaxUpgradeLevel"                                     "2"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_giant_form_2"
+
+    // Precache
+    //-------------------------------------------------------------------------------------------------------------
+    "precache"
+    {
+      "particle"                                          "particles/items/powertreads_splash.vpcf"
+    }
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_damage"                                      "135 185"
+      "bonus_health_regen"                                "17 20"
+      "bonus_attack_range_melee"                          "50 75" // doesn't work on ranged heroes
+      "cleave_percent"                                    "55 60" // doesn't work on ranged heroes
+      "cleave_starting_width"
+      {
+        "value"                                           "150"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "cleave_ending_width"
+      {
+        "value"                                           "360"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "cleave_distance"
+      {
+        "value"                                           "650"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "giant_attack_damage"                               "100"
+      "giant_primary_attribute_bonus"                     "55 75"
+      "giant_attack_speed_reduction"                      "35" // percentage attack speed reduction
+      "giant_splash_radius"
+      {
+        "value"                                           "650"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "giant_splash_damage"                               "250" // splash percent, doesn't work on ranged heroes
+      "giant_scale"                                       "50"
+      "duration"                                          "8.0"
+    }
+  }
+}

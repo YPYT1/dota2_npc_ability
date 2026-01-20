@@ -1,0 +1,52 @@
+"itembuilds"
+{
+  "author"        "OAA 7.33d"
+  "hero"          "npc_dota_hero_centaur"
+  "Title"         "Recommended items for Centaur Warrunner"
+
+  "Items"
+  {
+    "#DOTA_Item_Build_Starting_Items"
+    {
+      "item"      "item_enchanted_mango"
+      "item"      "item_flask"
+    }
+
+    "#DOTA_Item_Build_For_Farming"
+    {
+      "item"      "item_vanguard"
+      "item"      "item_blade_mail"
+    }
+
+    "#DOTA_Item_Build_Core_Items" // Really good items on Centaur
+    {
+      "item"      "item_crimson_guard"
+      "item"      "item_overwhelming_blink"
+      "item"      "item_eternal_shroud"
+      "item"      "item_heart"
+      "item"      "item_havoc_hammer_1"
+    }
+
+    "#DOTA_Item_Build_Support_Core"
+    {
+      "item"      "item_shield_staff"
+      "item"      "item_ultimate_scepter"
+      "item"      "item_lotus_orb"
+      "item"      "item_guardian_greaves"
+    }
+
+    "#DOTA_Item_Build_Shard"
+    {
+      "item"      "item_aghanims_shard"
+    }
+
+    "#DOTA_Item_Build_Luxury"
+    {
+      "item"      "item_black_king_bar_1"
+      "item"      "item_pipe"
+      "item"      "item_spiked_mail_1"
+      "item"      "item_stoneskin"
+      "item"      "item_martyrs_mail_1"
+    }
+  }
+}

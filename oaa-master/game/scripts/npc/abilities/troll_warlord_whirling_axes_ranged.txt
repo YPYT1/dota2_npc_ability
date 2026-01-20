@@ -1,0 +1,72 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Troll Warlord: Whirling Axes (Ranged)
+  //=================================================================================================================
+  "troll_warlord_whirling_axes_ranged"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "950"
+    "AbilityCastPoint"                                    "0.2"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "axe_width"
+      {
+        "value"                                           "100"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "axe_speed"
+      {
+        "value"                                           "1500.0"
+      }
+      "axe_range"
+      {
+        "value"                                           "950.0"
+      }
+      "axe_damage"
+      {
+        "value"                                           "60 80 100 120 240 480"
+        "special_bonus_unique_troll_warlord_3"            "+115"
+      }
+      "axe_slow_duration"
+      {
+        "value"                                           "2.5 3 3.5 4 4 4"
+        "special_bonus_unique_troll_warlord_whirling_axes_debuff_duration"  "+2.5"
+      }
+      "movement_speed"                                    "40"
+      "axe_spread"                                        "25"
+      "axe_count"                                         "5"
+      "AbilityCooldown"
+      {
+        "value"                                           "9"
+        "special_bonus_scepter"                           "-5"
+      }
+      "AbilityManacost"
+      {
+        "value"                                           "60"
+        "special_bonus_scepter"                           "-30"
+      }
+      "pierces_magic_immunity"
+      {
+        "special_bonus_unique_troll_warlord_6"            "+1"
+      }
+    }
+  }
+}

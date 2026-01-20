@@ -1,0 +1,64 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Monkey King Bar 4
+  //=================================================================================================================
+  "item_recipe_monkey_king_bar_4"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_4"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "8000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_monkey_king_bar_4"
+    "ItemRequirements"
+    {
+      "01"                                                "item_monkey_king_bar_3;item_upgrade_core_3"
+    }
+  }
+
+  //=================================================================================================================
+  // Monkey King Bar 4
+  //=================================================================================================================
+  "item_monkey_king_bar_4"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_monkey_king_bar"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "custom/monkey_king_bar_4"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "17500"
+    "ItemShopTags"                                        "damage;attack_speed;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "mkb 4;monkey king bar 4"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "4"
+    "UpgradesItems"                                       "item_monkey_king_bar_5"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_damage"                                      "40 50 70 100 140"
+      "bonus_attack_speed"                                "35 40 45 50 55"
+      "bonus_chance"                                      "80"
+      "bonus_chance_damage"                               "70 80 100 130 170"
+    }
+  }
+}

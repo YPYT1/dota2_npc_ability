@@ -1,0 +1,10 @@
+"DOTAHeroes"
+{
+  //=================================================================================================================
+  // HERO: Vengeful Spirit
+  //=================================================================================================================
+  "npc_dota_hero_vengefulspirit"
+  {
+    "Ability3"                                            "vengefulspirit_command_aura_oaa" // replaces vengefulspirit_command_aura
+  }
+}

@@ -1,0 +1,82 @@
+"DOTAUnits"
+{
+  //=================================================================================
+  // Giant Spiderling
+  //=================================================================================
+  "npc_dota_broodmother_giant_spiderling"
+  {
+    // General
+    //
+    "BaseClass"                                           "npc_dota_broodmother_spiderling"
+    "Model"                                               "models/heroes/broodmother/spiderling.vmdl"
+    "SoundSet"                                            "0"
+    "ModelScale"                                          "0.7"
+    "Level"                                               "6"
+    "IsSummoned"                                          "1"
+    "SelectionGroup"                                      "giantspiders"
+    "UnitLabel"                                           "giantspiderling"
+    "PathfindingSearchDepthScale"                         "0.1"
+
+    // Abilities
+    //----------------------------------------------------------------
+    "Ability1"                                            ""
+    "Ability2"                                            ""
+    "Ability3"                                            ""
+    "Ability4"                                            ""
+    "Ability5"                                            ""
+    "Ability6"                                            ""
+    "Ability7"                                            ""
+    "Ability8"                                            ""
+
+    // Armor
+    //----------------------------------------------------------------
+    "ArmorPhysical"                                       "0"      // Physical protection.
+    "MagicalResistance"                                   "20"    // Magical protection.
+
+    // Attack
+    //----------------------------------------------------------------
+    "AttackCapabilities"                                  "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageMin"                                     "30"    // Damage range min.
+    "AttackDamageMax"                                     "30"    // Damage range max.
+    "AttackRate"                                          "1.2"  // Speed of attack.
+    "AttackAnimationPoint"                                "0.5"   // Normalized time in animation cycle to attack.
+    "AttackAcquisitionRange"                              "500"   // Range within a target can be acquired.
+    "AttackRange"                                         "100"   // Range within a target can be attacked.
+    "ProjectileModel"                                     ""      // Particle system model for projectile.
+    "ProjectileSpeed"                                     ""      // Speed of projectile.
+
+    // Bounty
+    //----------------------------------------------------------------
+    "BountyXP"                                            "60"    // Experience earn.
+    "BountyGoldMin"                                       "60"    // Gold earned min.
+    "BountyGoldMax"                                       "60"    // Gold earned max.
+
+    // Bounds
+    //----------------------------------------------------------------
+    "BoundsHullName"                                      "DOTA_HULL_SIZE_SMALL"      // Hull type used for navigation/locomotion.
+    "HealthBarOffset"                                     "140"
+
+    // Movement
+    //----------------------------------------------------------------
+    "MovementCapabilities"                                "DOTA_UNIT_CAP_MOVE_GROUND"      // Type of locomotion - ground, air
+    "MovementSpeed"                                       "350"    // Speed
+    "MovementTurnRate"                                    "0.5"    // Turning rate.
+
+    // Status
+    //----------------------------------------------------------------
+    "StatusHealth"                                        "540"    // Base health.
+    "StatusHealthRegen"                                   "4.0"    // Health regeneration rate.
+    "StatusMana"                                          "0"      // Base mana.
+    "StatusManaRegen"                                     "0"      // Mana regeneration rate.
+
+    // Team
+    //----------------------------------------------------------------
+    "TeamName"                                            "DOTA_TEAM_GOODGUYS"      // Team name.
+    "UnitRelationshipClass"                               "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    // Vision
+    //----------------------------------------------------------------
+    "VisionDaytimeRange"                                  "800"    // Range of vision during day light.
+    "VisionNighttimeRange"                                "800"    // Range of vision at night time.
+  }
+}

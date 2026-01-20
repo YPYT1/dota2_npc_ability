@@ -1,0 +1,70 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Lotus Orb
+  //=================================================================================================================
+  "item_recipe_lotus_orb"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    //"AbilityTextureName"                                  "custom/recipe/recipe_1"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "250"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_lotus_orb"
+    "ItemRequirements"
+    {
+      "01"                                                "item_pers;item_platemail;item_energy_booster"
+    }
+  }
+
+  //=================================================================================================================
+  // Lotus Orb
+  //=================================================================================================================
+  "item_lotus_orb"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO" //OAA, Valve forgot
+    "AbilityTextureName"                                  "custom/lotus_orb_1"
+
+    "AbilityCooldown"                                     "15.0"
+    "AbilitySharedCooldown"                               "lotus"
+    "AbilityCastRange"                                    "900 950 1000 1050 1100"
+    "AbilityManaCost"                                     "175"
+
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_lotus_orb_2"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "3850"
+    "ItemShopTags"                                        "armor;regen_health;regen_mana;mana_pool;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "ls;lotus orb"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_ALWAYS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_armor"                                       "10 11 13 16 20"
+      "bonus_health_regen"                                "6.5 10 13 16 19"
+      "bonus_mana_regen"                                  "4.0 4.25 4.75 5.5 6.5"
+      "bonus_mana"                                        "250 350 500 700 950"
+      "active_duration"                                   "5"
+    }
+  }
+}

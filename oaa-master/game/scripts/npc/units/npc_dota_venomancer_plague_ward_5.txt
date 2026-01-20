@@ -1,0 +1,28 @@
+"DOTAUnits"
+{
+  //=================================================================================
+  // Venomancer Plague Ward 5
+  //=================================================================================
+  "npc_dota_venomancer_plague_ward_5"
+  {
+    "include_keys_from"                                   "npc_dota_venomancer_plague_ward_1"
+
+    "ModelScale"                                          "1.0"
+
+    // Attack
+    //----------------------------------------------------------------
+    "AttackDamageMin"                                     "48"    // Damage range min.
+    "AttackDamageMax"                                     "48"    // Damage range max.
+
+    // Bounty
+    //----------------------------------------------------------------
+    "BountyXP"                                            "70"    // Experience earn.
+    "BountyGoldMin"                                       "44"    // Gold earned min.
+    "BountyGoldMax"                                       "44"    // Gold earned max.
+
+    // Status
+    //----------------------------------------------------------------
+    "StatusHealth"                                        "900"    // Base health.
+  }
+
+}

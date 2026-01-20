@@ -1,0 +1,23 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Tusk: Bitter Chill (Innate)
+  //=================================================================================================================
+  "tusk_bitter_chill"
+  {
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
+
+    "MaxLevel"                                            "6" // same as Dependent ability (Walrus Punch) + 1
+    "DependentOnAbility"                                  "tusk_walrus_punch"
+
+    "AbilityValues"
+    {
+      "radius"
+      {
+        "value"                                           "350"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "attack_speed_slow"                                 "20 40 60 80 100 120"
+    }
+  }
+}

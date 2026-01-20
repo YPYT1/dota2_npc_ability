@@ -1,0 +1,62 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Shadow Shaman: Ether Shock
+  //=================================================================================================================
+  "shadow_shaman_ether_shock"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "600"
+    "AbilityCastPoint"                                    "0.3"
+
+    // Time
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "14 12 10 8 7 6"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "90 105 120 135 150 165"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "start_radius"
+      {
+        "value"                                           "200"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "end_radius"
+      {
+        "value"                                           "300"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "end_distance"
+      {
+        "value"                                           "600"
+      }
+      "targets" //OAA
+      {
+        "value"                                           "9"
+      }
+      "damage" //OAA
+      {
+        "value"                                           "125 190 255 320 640 1280"
+        "special_bonus_unique_shadow_shaman_3"            "+375"
+      }
+    }
+  }
+}

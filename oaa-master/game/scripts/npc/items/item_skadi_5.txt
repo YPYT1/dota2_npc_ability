@@ -1,0 +1,70 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Eye of Skadi 5
+  //=================================================================================================================
+  "item_recipe_skadi_5"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_5"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "17000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_skadi_5"
+    "ItemRequirements"
+    {
+      "01"                                                "item_skadi_4;item_upgrade_core_4"
+    }
+  }
+
+  //=================================================================================================================
+  // Eye of Skadi 5
+  //=================================================================================================================
+  "item_skadi_5"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_skadi"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "custom/skadi_5"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "35900"
+    "ItemShopTags"                                        "agi;str;int;hard_to_tag;mana_pool;health_pool;unique"
+    "ItemQuality"                                         "artifact"
+    "ItemAliases"                                         "eos 5;eye of skadi 5;skadi 5"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "5"
+    "UpgradesItems"                                       ""
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_all_stats"                                   "35 40 45 50 55"
+      "bonus_health"                                      "0"
+      "bonus_mana"                                        "0"
+      "cold_slow_melee"                                   "-25 -30 -35 -40 -45"
+      "cold_attack_slow_melee"                            "-20"
+      "cold_slow_ranged"                                  "-40 -45 -50 -55 -60"
+      "cold_attack_slow_ranged"                           "-20"
+      "cold_duration"                                     "3.0"
+      "restoration_reduction"                             "40 45 50 55 60"
+      "heal_reduction"                                    "40 45 50 55 60"
+    }
+  }
+}

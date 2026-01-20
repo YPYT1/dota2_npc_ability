@@ -1,0 +1,11 @@
+"DOTAHeroes"
+{
+  //=================================================================================================================
+  // HERO: Batrider
+  //=================================================================================================================
+  "npc_dota_hero_batrider"
+  {
+    "Ability1"                                            "batrider_sticky_napalm_oaa" // replaces batrider_sticky_napalm
+    "Ability4"                                            "generic_hidden" // replaces batrider_sticky_napalm_application_damage
+  }
+}

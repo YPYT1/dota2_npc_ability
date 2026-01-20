@@ -1,0 +1,75 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Regeneration Crystal 2
+  //=================================================================================================================
+  "item_recipe_regen_crystal_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_4"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "8000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_regen_crystal_2"
+    "ItemRequirements"
+    {
+      "01"                                                "item_regen_crystal_1;item_upgrade_core_3"
+    }
+  }
+
+  //=================================================================================================================
+  // Regeneration Crystal 2
+  //=================================================================================================================
+  "item_regen_crystal_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/regen_crystal.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    "AbilityTextureName"                                  "custom/regen_crystal_2"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "25"
+    "AbilitySharedCooldown"                               "regen_crystal"
+    "AbilityManaCost"                                     "200"
+
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "2"
+    "UpgradesItems"                                       "item_regen_crystal_3"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "18100"
+    "ItemShopTags"                                        "regen_health;health_pool"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "regen crystal 2"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_health"                                      "1300 1800 2450"
+      "bonus_strength"                                    "0"
+      "max_mana_to_hp_regen"                              "2.4"
+      //"active_hp_regen"                                   "175 200 225"
+      //"active_hp_regen_amp"                               "50"
+      "active_max_hp_as_heal"                             "7"
+      "duration"                                          "6"
+    }
+  }
+}

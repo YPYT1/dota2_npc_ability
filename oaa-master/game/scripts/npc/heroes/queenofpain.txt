@@ -1,0 +1,33 @@
+"DOTAHeroes"
+{
+  //=================================================================================================================
+  // HERO: Queen of Pain
+  //=================================================================================================================
+  "npc_dota_hero_queenofpain"
+  {
+    // Abilities
+    //-------------------------------------------------------------------------------------------------------------
+    //"Ability10"                                           "special_bonus_unique_queen_of_pain_1"
+    "Ability11"                                           "special_bonus_strength_12" // replaces special_bonus_strength_7
+
+    "Ability12"                                           "special_bonus_unique_queen_of_pain_4_oaa" // replaces special_bonus_unique_queen_of_pain_4
+    //"Ability13"                                           "special_bonus_attack_damage_30"
+
+    //"Ability14"                                           "special_bonus_unique_queen_of_pain_2"
+    //"Ability15"                                           "special_bonus_unique_queen_of_pain_3"
+
+    //"Ability16"                                           "special_bonus_unique_queen_of_pain_6"
+    //"Ability17"                                           "special_bonus_unique_queen_of_pain_7"
+
+    // special_bonus_unique_queen_of_pain - AoE Shadow Strike                                    - scepter does this
+    // special_bonus_unique_queen_of_pain_1 - Attack Speed against Shadow Striked units
+    // special_bonus_unique_queen_of_pain_2 - Scream of Pain Damage
+    // special_bonus_unique_queen_of_pain_3 - Sonic Wave Cooldown
+    // special_bonus_unique_queen_of_pain_4 - Shadow Strike Damage Interval                      - terrible
+    // special_bonus_unique_queen_of_pain_5 - Sonic Wave Fear                                    - unused
+    // special_bonus_unique_queen_of_pain_6 - Blink Cooldown                                     - annoying
+    // special_bonus_unique_queen_of_pain_7 - Sonic Wave Damage
+    // special_bonus_unique_queen_of_pain_strike_heal - Shadow Strike Heal Per Tick              - unused
+    // special_bonus_unique_queen_of_pain_4_oaa - Shadow Strike Duration Damage                  - custom talent
+  }
+}

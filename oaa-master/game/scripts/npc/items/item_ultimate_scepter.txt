@@ -1,0 +1,51 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Scepter
+  //=================================================================================================================
+  "item_recipe_ultimate_scepter"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    //"AbilityTextureName"                                  "custom/recipe/recipe_1"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "0"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_ultimate_scepter"
+    "ItemRequirements"
+    {
+      "01"                                                "item_point_booster;item_staff_of_wizardry;item_ogre_axe;item_blade_of_alacrity"
+    }
+  }
+
+  //=================================================================================================================
+  // Scepter
+  //=================================================================================================================
+  "item_ultimate_scepter"
+  {
+    "AbilityTextureName"                                  "custom/ultimate_scepter"
+
+    "AbilityCastRange"                                    "99999" //OAA, for Alchemist when he gives to others
+
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_aghanims_scepter_2"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_all_stats"                                   "10 15 20 25 30"
+      "bonus_health"                                      "175 275 425 625 875"
+      "bonus_mana"                                        "175 275 425 625 875"
+      "talent_level_tooltip"                              "0 10 15 20 25" //OAA
+    }
+  }
+}

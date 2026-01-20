@@ -1,0 +1,17 @@
+
+// Debuff Mirror
+//
+"DOTA_Tooltip_Ability_boss_stopfightingyourself_debuff_mirror"                  "Radiant Deflection"
+"DOTA_Tooltip_Ability_boss_stopfightingyourself_debuff_mirror_Description"      "Uriel applies all debuffs on him on every attack."
+
+
+// Dupe Items
+//
+"DOTA_Tooltip_Ability_boss_stopfightingyourself_dupe_items"                     "Guardian Insight"
+"DOTA_Tooltip_Ability_boss_stopfightingyourself_dupe_items_Description"         "Every 5 seconds Uriel duplicates the inventory of the hero that attacked him. Uriel will use items randomly."
+
+
+// Dupe Heroes
+//
+"DOTA_Tooltip_Ability_boss_stopfightingyourself_dupe_heroes"                    "Self Reflection"
+"DOTA_Tooltip_Ability_boss_stopfightingyourself_dupe_heroes_Description"        "Uriel creates illusions of random enemy heroes in the area. The illusions deal the same base damage, but take increased damage."

@@ -1,0 +1,85 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Hurricane Pike 4
+  //=================================================================================================================
+  "item_recipe_hurricane_pike_4"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_4"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "8000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_hurricane_pike_4"
+    "ItemRequirements"
+    {
+      "01"                                                "item_hurricane_pike_3;item_upgrade_core_3"
+    }
+  }
+
+  //=================================================================================================================
+  // Hurricane Pike 4
+  //=================================================================================================================
+  "item_hurricane_pike_4"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_hurricane_pike"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_BOTH | DOTA_UNIT_TARGET_TEAM_CUSTOM"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CUSTOM"
+    "AbilityTextureName"                                  "custom/hurricane_pike_4"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "650"
+    "AbilityCastPoint"                                    "0.0"
+    "AbilityCooldown"                                     "19.0 17.0 15.0 13.0 11.0"
+    "AbilitySharedCooldown"                               "force"
+    "AbilityManaCost"                                     "150"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "17450"
+    "ItemShopTags"                                        "agi;str;int;damage;attack_speed;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "hurricane pike 4;pike 4"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "4"
+    "UpgradesItems"                                       "item_hurricane_pike_5"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_intellect"                                   "12 17 22 27 32"
+      "bonus_health"                                      "200 300 450 650 900"
+      "bonus_agility"                                     "17 22 32 47 67"
+      "bonus_strength"                                    "12 17 22 27 32"
+      "base_attack_range"                                 "140 150 160 170 180"
+      "push_length"                                       "600"
+      "enemy_length"                                      "450"
+      "range_duration"                                    "6"
+      "cast_range_enemy"                                  "450"
+      "max_attacks"                                       "5 6 7 8 9"
+      "bonus_attack_speed"                                "100 110 120 130 140"
+      "push_time"                                         "0.5"
+      "dizzy_duration"                                    "0"
+      "dizzy_distance_pct"                                "0"
+      "cooldown_tooltip"                                  "19 17 15 13 11"
+    }
+  }
+}

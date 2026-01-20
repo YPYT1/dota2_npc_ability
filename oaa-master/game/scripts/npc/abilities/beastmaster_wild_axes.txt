@@ -1,0 +1,68 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Beastmaster: Wild Axes
+  //=================================================================================================================
+  "beastmaster_wild_axes"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_POINT"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "1500"
+    "AbilityCastPoint"                                    "0.3"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "50 55 60 65 70 75"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "radius"
+      {
+        "value"                                           "175"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "spread"
+      {
+        "value"                                           "450"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "range"                                             "1500"
+      "axe_damage"
+      {
+        "value"                                           "30 65 100 135 270 405"
+        "CalculateSpellDamageTooltip"                     "1"
+      }
+      "duration"
+      {
+        "value"                                           "12"
+      }
+      "damage_amp"
+      {
+        "value"                                           "7 9 11 13 14 15"
+        "special_bonus_unique_beastmaster_9"              "+2"
+      }
+      "AbilityCooldown"
+      {
+        "value"                                           "8"
+        "special_bonus_unique_beastmaster_wild_axe_cooldown"  "-8"
+      }
+      "min_throw_duration"                                "0.4"
+      "max_throw_duration"                                "1.0"
+    }
+  }
+}

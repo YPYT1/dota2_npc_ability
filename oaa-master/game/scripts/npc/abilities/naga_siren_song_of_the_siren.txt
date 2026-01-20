@@ -1,0 +1,58 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Naga Siren: Song of the Siren
+  //=================================================================================================================
+  "naga_siren_song_of_the_siren"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityType"                                         "ABILITY_TYPE_ULTIMATE"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+
+    "MaxLevel"                                            "5"
+    "RequiredLevel"                                       "6"
+    "LevelsBetweenUpgrades"                               "6"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastPoint"                                    "1.0"
+    "AbilityCastRange"                                    "900 1150 1400 1500 1600"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "150 250 350 450 550"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "radius"
+      {
+        "value"                                           "900 1150 1400 1500 1600"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "duration" //OAA
+      {
+        "value"                                           "4 5 6 7 8"
+      }
+      "animation_rate"                                    "0.55"
+      "heal_pct"
+      {
+        "value"                                           "1 2 3 3 3"
+        "special_bonus_shard"                             "+1"
+      }
+      "mana_pct"
+      {
+        "special_bonus_shard"                             "+4"
+      }
+      "AbilityCooldown" //OAA
+      {
+        "value"                                           "100 95 90 85 80"
+        "special_bonus_unique_naga_siren_5"               "-20"
+      }
+    }
+  }
+}

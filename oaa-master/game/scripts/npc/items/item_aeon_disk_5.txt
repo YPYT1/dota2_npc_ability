@@ -1,0 +1,74 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Aeon Disk 5
+  //=================================================================================================================
+  "item_recipe_aeon_disk_oaa_5"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_5"
+
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "17000"
+    "ItemShopTags"                                        ""
+
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_aeon_disk_oaa_5"
+    "ItemRequirements"
+    {
+      "01"                                                "item_aeon_disk_oaa_4;item_upgrade_core_4"
+    }
+  }
+
+  //=================================================================================================================
+  // Aeon Disk 5
+  //=================================================================================================================
+  "item_aeon_disk_oaa_5"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/aeon_disk.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "custom/combo_breaker_5"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "105 95 85 75 65"
+    "AbilitySharedCooldown"                               "combobreaker"
+    "AbilityManaCost"                                     "0"
+
+    // Spicy Parameters
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "5"
+    "UpgradesItems"                                       ""
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "34500"
+    "ItemShopTags"                                        "health_pool;mana_pool"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "ad 5;aeon disk 5"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_health"                                      "425 525 675 875 1125"
+      "bonus_mana"                                        "425 525 675 875 1125"
+      "bonus_health_regen"                                "6.5 9.5 12.5 15.5 18.5"
+      "bonus_mana_regen"                                  "4.25 4.5 5 5.75 6.75"
+      "health_threshold_pct"                              "70"
+      "status_resistance"                                 "75"
+      "buff_duration"                                     "2.5"
+      "cooldown_tooltip"                                  "105 95 85 75 65"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Lucience 2
+  //=================================================================================================================
+  "item_recipe_lucience_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_3"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "3500"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_lucience_2"
+    "ItemRequirements"
+    {
+      "01"                                                "item_lucience;item_upgrade_core_2"
+    }
+  }
+
+  //=================================================================================================================
+  // Lucience 2
+  //=================================================================================================================
+  "item_lucience_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/lucience.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityTextureName"                                  "custom/lucience_2"
+
+    "AbilityCooldown"                                     "1"
+    "AbilityManaCost"                                     "0"
+    "AbilityCastRange"                                    "1200"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "4"
+    "ItemBaseLevel"                                       "2"
+    "UpgradesItems"                                       "item_lucience_3"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "6625"
+    "ItemShopTags"                                        "str;int;move_speed;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "lucience 2;lucio 2"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_strength"                                    "12 22 37 57"
+      "bonus_intellect"                                   "12 22 37 57"
+      "aura_bonus_hp_regen"                               "60 80 120 180"
+      "aura_bonus_mana_regen"                             "1.75 2.25 3.0 4.0"
+      "aura_percentage_bonus_movement_speed"              "15 17 19 21"
+      "aura_bonus_attack_speed"                           "25 30 35 40"
+      "aura_radius"
+      {
+        "value"                                           "1200"
+        "affected_by_aoe_increase"                        "1"
+      }
+    }
+  }
+}

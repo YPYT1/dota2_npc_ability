@@ -1,0 +1,89 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Spirit Vessel 4
+  //=================================================================================================================
+  "item_recipe_spirit_vessel_4"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_4"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "8000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_spirit_vessel_4"
+    "ItemRequirements"
+    {
+      "01"                                                "item_spirit_vessel_3;item_upgrade_core_3"
+    }
+  }
+
+  //=================================================================================================================
+  // Spirit Vessel 4
+  //=================================================================================================================
+  "item_spirit_vessel_4"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/spirit_vessel.lua"
+    "AbilityTextureName"                                  "custom/spirit_vessel_4"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_BOTH"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+
+    "AbilityCastRange"                                    "750 850 950 1050 1150"
+    "AbilityCooldown"                                     "10"
+    "AbilitySharedCooldown"                               "urn"
+
+    // Spicy Parameters
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "4"
+    "UpgradesItems"                                       "item_spirit_vessel_5"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "15725"
+    "ItemShopTags"                                        "regen_mana;armor;boost_health"
+    "ItemQuality"                                         "rare"
+    "ItemAliases"                                         "sv 4;spirit vessel 4"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_health"                                      "0"
+      "bonus_mana_regen"                                  "1.75 2.0 2.5 3.25 4.25"
+      "bonus_all_stats"                                   "10 15 20 25 30"
+      "bonus_armor"                                       "2 3 5 8 12"
+      "soul_radius"
+      {
+        "value"                                           "1500"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "kill_charges"                                      "1"
+      "soul_heal_amount"                                  "45 60 85 120 165"
+      "soul_damage_amount_oaa"                            "25 35 55 85 125"
+      "duration"                                          "8.0"
+      "heal_reduction_with_charge"                        "54 58 62 66 70"
+      "heal_reduction_no_charge"                          "40 45 50 55 60"
+      "current_hp_as_dmg"                                 "4 4.5 5 5.5 6"
+      "health_restoration"                                "-40 -45 -50 -55 -60"
+      "restoration_reduction_enemy"                       "54 58 62 66 70"
+    }
+  }
+}

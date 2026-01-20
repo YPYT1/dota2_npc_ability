@@ -1,0 +1,20 @@
+"DOTAHeroes"
+{
+  //=================================================================================================================
+  // HERO: Phantom Lancer
+  //=================================================================================================================
+  "npc_dota_hero_phantom_lancer"
+  {
+    //"Ability10"                                           "special_bonus_unique_phantom_lancer_lance_slow_duration"
+    //"Ability11"                                           "special_bonus_unique_phantom_lancer_juxtapose_illusio_proc_chance"
+
+    //"Ability12"                                           "special_bonus_unique_phantom_lancer_illusion_lances"
+    //"Ability13"                                           "special_bonus_unique_phantom_lancer_doppelwalk_cast_range"
+
+    //"Ability14"                                           "special_bonus_unique_phantom_lancer_lance_damage"
+    //"Ability15"                                           "special_bonus_unique_phantom_lancer_juxtapose_damage_in"
+
+    "Ability16"                                           "special_bonus_lifesteal_40" // replaces special_bonus_unique_phantom_lancer_4
+    //"Ability17"                                           "special_bonus_unique_phantom_lancer_illusory_armaments_duration"
+  }
+}

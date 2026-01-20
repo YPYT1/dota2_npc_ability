@@ -1,0 +1,81 @@
+"DOTAAbilities"
+{
+  //"item_recipe_aeon_disk"                                 "REMOVE"
+  //"item_aeon_disk"                                        "REMOVE"
+
+  //=================================================================================================================
+  // Recipe: Aeon Disk 1
+  //=================================================================================================================
+  "item_recipe_aeon_disk_oaa_1"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_1"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "1200"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_aeon_disk_oaa_1"
+    "ItemRequirements"
+    {
+      "01"                                                "item_vitality_booster;item_energy_booster"
+    }
+  }
+
+  //=================================================================================================================
+  // Aeon Disk 1
+  //=================================================================================================================
+  "item_aeon_disk_oaa_1"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/aeon_disk.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "custom/combo_breaker"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "105 95 85 75 65" // old: "105 95 75 55 35"
+    "AbilitySharedCooldown"                               "combobreaker"
+    "AbilityManaCost"                                     "0"
+
+    // Spicy Parameters
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_aeon_disk_oaa_2"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "3000"
+    "ItemShopTags"                                        "health_pool;mana_pool"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "ad;aeon disk"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_health"                                      "425 525 675 875 1125"
+      "bonus_mana"                                        "425 525 675 875 1125"
+      "bonus_health_regen"                                "6.5 9.5 12.5 15.5 18.5"
+      "bonus_mana_regen"                                  "4.25 4.5 5 5.75 6.75"
+      "health_threshold_pct"                              "70"
+      "status_resistance"                                 "75"
+      "buff_duration"                                     "2.5"
+      "cooldown_tooltip"                                  "105 95 85 75 65"
+    }
+  }
+}

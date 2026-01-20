@@ -1,0 +1,48 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Faceless Void: Time Lock (OAA rework)
+  //=================================================================================================================
+  "faceless_void_time_lock_oaa"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "ability_lua"
+    "ScriptFile"                                          "abilities/oaa_time_lock.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_YES"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES_STRONG"
+    "AbilityTextureName"                                  "faceless_void_time_lock"
+    "IsBreakable"                                         "1"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    // Time
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "1.8"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "duration"                                          "1.0" // in vanilla: min stun time is second_attack_delay + vanilla duration (0.5) + 0.1 =  1.0;
+      "duration_creep"                                    "1.0"
+      "chance_pct"                                        "18 20 22 24 26 28"
+      "min_damage" // it should be vanilla value x 2
+      {
+        "value"                                           "36 44 52 60 120 180"
+        "LinkedSpecialBonus"                              "special_bonus_unique_faceless_void_3_oaa"
+      }
+      "max_damage" // it should be at least: vanilla value x 4
+      {
+        "value"                                           "72 88 104 120 240 360"
+        "LinkedSpecialBonus"                              "special_bonus_unique_faceless_void_3_oaa"
+        "LinkedSpecialBonusField"                         "value2"
+      }
+      "second_attack_delay"                               "0.4"
+    }
+  }
+}

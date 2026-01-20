@@ -1,0 +1,90 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Reflection Shard
+  //=================================================================================================================
+  "item_recipe_reflection_shard_1"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_2"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "1500"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_reflection_shard_1"
+    "ItemRequirements"
+    {
+      "01"                                                "item_black_king_bar_1;item_upgrade_core"
+    }
+  }
+
+  //=================================================================================================================
+  // Reflection Shard
+  //=================================================================================================================
+  "item_reflection_shard_1"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/reflection_shard.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+    "AbilityTextureName"                                  "custom/reflection_shard_1"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "20"
+    "AbilitySharedCooldown"                               "reflection_shard"
+    "AbilityManaCost"                                     "45"
+
+    "MaxUpgradeLevel"                                     "4"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_reflection_shard_2"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "5550"
+    "ItemShopTags"                                        "str;damage;boost_magic_resist;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "reflect shard 1"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    "precache"
+    {
+      "particle"                                          "particles/items/reflection_shard/reflection_shield.vpcf"
+      "particle"                                          "particles/items/reflection_shard/reflection_shield_highlight1.vpcf"
+      "particle"                                          "particles/items/reflection_shard/reflection_shield_plasma.vpcf"
+      "particle"                                          "particles/items/reflection_shard/reflection_shield_rings.vpcf"
+      "particle"                                          "particles/items/reflection_shard/reflection_shield_shell.vpcf"
+      "particle"                                          "particles/items/reflection_shard/reflection_shield_shell_shield_cast.vpcf"
+      "particle"                                          "particles/items/reflection_shard/reflection_shield_shell_shield_end.vpcf"
+      "particle"                                          "particles/items/reflection_shard/reflection_shield_shell_warp.vpcf"
+      "particle"                                          "particles/items/reflection_shard/reflection_shield_shell_warp_cast.vpcf"
+      "particle"                                          "particles/items/reflection_shard/reflection_shield_shell_warp_endcap.vpcf"
+      "particle"                                          "particles/items/reflection_shard/immunity_sphere_yellow.vpcf"
+      "particle"                                          "particles/items/reflection_shard/immunity_sphere_yellow_b.vpcf"
+      "particle"                                          "particles/items/reflection_shard/immunity_sphere_yellow_lincoln_b.vpcf"
+      "soundfile"                                         "soundevents/game_sounds_heroes/game_sounds_antimage.vsndevts"
+    }
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_strength"                                    "17 27 42 62"
+      "bonus_damage"                                      "35 55 85 125"
+      "bonus_magic_resist"                                "22 23 24 25"
+      "duration"                                          "2.5"
+    }
+  }
+}

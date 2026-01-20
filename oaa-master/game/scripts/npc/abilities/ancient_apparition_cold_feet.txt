@@ -1,0 +1,56 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Ancient Apparition: Cold Feet
+  //=================================================================================================================
+  "ancient_apparition_cold_feet"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "700 800 900 1000 1000 1000"
+    "AbilityCastPoint"                                    "0.01"
+
+    // Time
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "12 11 10 9 8 7" //OAA
+    "AbilityDuration"                                     "4.0"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "110 115 120 125 130 135"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "frost_stacks"
+      {
+        "value"                                           "2 4 6 8 10 12"
+        "special_bonus_unique_ancient_apparition_8"       "+2"
+      }
+      "break_distance"
+      {
+        "value"                                           "725 750 775 800 825 850"
+        "special_bonus_unique_ancient_apparition_1"       "+300"
+      }
+      "stun_duration"                                     "1.8 2.2 2.6 3.0 3.1 3.2"
+      "area_of_effect"
+      {
+        "value"                                           "0"
+      }
+    }
+  }
+}

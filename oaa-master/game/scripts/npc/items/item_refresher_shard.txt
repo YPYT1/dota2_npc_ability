@@ -1,0 +1,73 @@
+"DOTAAbilities"
+{
+  "item_recipe_refresher_shard_oaa"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_5"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "1"
+    "ItemShopTags"                                        ""
+    "ItemPurchasable"                                     "1"
+    "SecretShop"                                          "1"
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_refresher_shard_oaa"
+
+    "ItemRequirements"
+    {
+      "01"                                                "item_upgrade_core_3;item_upgrade_core_5"
+    }
+  }
+
+  //=================================================================================================================
+  // Refresher Shard
+  //=================================================================================================================
+  "item_refresher_shard_oaa"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_refresher_shard"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "Model"                                               "models/props_gameplay/refresher_shard.vmdl"
+    "Effect"                                              "particles/generic_gameplay/dropped_refresher_shard.vpcf"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "120" //OAA
+    "AbilityManaCost"                                     "200"
+    "AbilitySharedCooldown"                               "refresher_shard_oaa"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "40"
+    "ItemCost"                                            "1" //OAA
+    "ItemShopTags"                                        ""
+    "ItemQuality"                                         "consumable"
+    "ItemPurchasable"                                     "1" //OAA
+    "ItemStackable"                                       "0"
+    "ItemShareability"                                    "ITEM_NOT_SHAREABLE" //OAA
+    "ItemPermanent"                                       "0"
+    "ItemInitialCharges"                                  "1"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS" //OAA
+    "ItemContributesToNetWorthWhenDropped"                "0"
+    "IsTempestDoubleClonable"                             "0"
+    "SecretShop"                                          "1" //OAA
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_health_regen"                                "18" //OAA
+      "bonus_mana_regen"                                  "7.5" //OAA
+      "bonus_damage"                                      "0" //OAA
+    }
+  }
+}

@@ -1,0 +1,80 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Morphling: Adaptive Strike
+  //=================================================================================================================
+  "morphling_adaptive_strike_agi"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "600 675 750 825 900 975"
+    "AbilityCastPoint"                                    "0.25"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "40 50 60 70 80 90"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "AbilityCooldown" //OAA
+      {
+        "value"                                           "14 12 10 8 8 8"
+        "special_bonus_unique_morphling_7"                "-3"
+      }
+      "damage_base" //OAA
+      {
+        "value"                                           "70 80 90 100 200 300"
+        "CalculateSpellDamageTooltip"                     "1"
+      }
+      "damage_min"
+      {
+        "value"                                           "0.5"
+        "CalculateSpellDamageTooltip"                     "0"
+      }
+      "damage_max"
+      {
+        "value"                                           "1.0 1.5 2.0 2.5 3.0 3.5"
+        "CalculateSpellDamageTooltip"                     "0"
+      }
+      "stun_min"
+      {
+        "value"                                           "0.5"
+      }
+      "stun_max"
+      {
+        "value"                                           "2.4"
+      }
+      "knockback_min"
+      {
+        "value"                                           "50"
+      }
+      "knockback_max"
+      {
+        "value"                                           "350"
+      }
+      "knockback_duration"
+      {
+        "value"                                           "0.5"
+      }
+      "projectile_speed"                                  "1150"
+      "extra_targets"
+      {
+        "value"                                           "0"
+      }
+    }
+  }
+}

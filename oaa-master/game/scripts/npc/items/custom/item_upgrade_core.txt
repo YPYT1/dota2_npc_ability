@@ -1,0 +1,37 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Angels Blood
+  //=================================================================================================================
+  "item_upgrade_core"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityTextureName"                                  "custom/angels_blood"
+    "Effect"                                              "particles/items/upgrade_1.vpcf"
+    "Model"                                               "models/items/upgrade_1.vmdl"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "2"
+    "ItemCost"                                            "1"
+    "ItemPurchasable"                                     "0"
+    //"ItemSellable"                                      "0"
+    "ItemKillable"                                        "1"
+    "ItemShareability"                                    "ITEM_NOT_SHAREABLE"
+    "IsTempestDoubleClonable"                             "0"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "precache"
+    {
+      "particle"                                          "particles/items/upgrade_1.vpcf"
+      "model"                                             "models/items/upgrade_1.vmdl"
+    }
+  }
+}

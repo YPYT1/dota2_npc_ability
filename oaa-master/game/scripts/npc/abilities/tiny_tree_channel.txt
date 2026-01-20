@@ -1,0 +1,49 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Ability: Tiny Tree Channel (Scepter ability)
+  //=================================================================================================================
+  "tiny_tree_channel"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES" //OAA, Valve has extra space
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_PHYSICAL"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_YES"
+
+    "MaxLevel"                                            "1"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityChannelTime"                                  "2.5"
+    "AbilityCastRange"                                    "1000" //OAA
+    "AbilityCastPoint"                                    "0.2"
+
+    // Time
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "17"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "200"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "speed"                                             "1000.0"
+      "range"                                             "1000" //OAA
+      "splash_radius"
+      {
+        "value"                                           "400"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "tree_grab_radius"
+      {
+        "value"                                           "700"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "interval"                                          "0.5"
+    }
+  }
+}

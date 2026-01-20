@@ -1,0 +1,2 @@
+"DOTA_Tooltip_ability_lone_druid_spirit_bear_demolish_Description"              "Spirit Bear deals more damage to <font color='#FFA500'>Bosses</font>"
+"DOTA_Tooltip_ability_lone_druid_spirit_bear_demolish_bonus_building_damage"    "%<font color='#FFA500'>BEAR BONUS BOSS DAMAGE:</font>"

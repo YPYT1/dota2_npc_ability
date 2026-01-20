@@ -1,0 +1,39 @@
+"DOTAHeroes"
+{
+  //=================================================================================================================
+  // HERO: Broodmother
+  //=================================================================================================================
+  "npc_dota_hero_broodmother"
+  {
+    //"Ability1"                                            "broodmother_insatiable_hunger"
+    //"Ability2"                                            "broodmother_spin_web"
+    //"Ability3"                                            "broodmother_incapacitating_bite"
+    //"Ability4"                                            "broodmother_sticky_snare"
+    "Ability5"                                            "broodmother_spawn_spiderlings_oaa" // replaces broodmother_spiders_milk
+    "Ability6"                                            "broodmother_incapacitating_bite_oaa" // replaces broodmother_spawn_spiderlings
+    "Ability7"                                            "broodmother_spiders_milk" // replaces undefined
+
+    "Ability10"                                           "special_bonus_all_stats_5" // replaces special_bonus_unique_broodmother_3
+    //"Ability11"                                           "special_bonus_unique_broodmother_6"
+
+    //"Ability12"                                           "special_bonus_unique_broodmother_2"
+    "Ability13"                                           "special_bonus_unique_broodmother_2_oaa" // replaces special_bonus_unique_broodmother_7
+
+    //"Ability14"                                           "special_bonus_unique_broodmother_5"
+    //"Ability15"                                           "special_bonus_unique_broodmother_4"
+
+    //"Ability16"                                           "special_bonus_unique_broodmother_1"
+    "Ability17"                                           "special_bonus_unique_broodmother_4_oaa" // replaces special_bonus_unique_broodmother_web_speed
+
+    // special_bonus_unique_broodmother_1 - BAT during Insatiable Hunger
+    // special_bonus_unique_broodmother_2 - Incapacitating Bite Attack Bonus
+    // special_bonus_unique_broodmother_3 - Spawn Spiderlings Damage                                       - do not use this one
+    // special_bonus_unique_broodmother_4 - Incapacitating Bite Slow/Miss Chance
+    // special_bonus_unique_broodmother_5 - Spin Web Charge Restore Time
+    // special_bonus_unique_broodmother_6 - Insatiable Hunger Lifesteal
+    // special_bonus_unique_broodmother_7 - Spiderlings Health                                             - do not use this one
+    // special_bonus_unique_broodmother_web_speed                                                          - annoying and not even good
+    // special_bonus_unique_broodmother_2_oaa - Spiderlings Health per hero lvl
+    // special_bonus_unique_broodmother_4_oaa - Spiderlings Attack Damage per hero lvl
+  }
+}

@@ -1,0 +1,89 @@
+"DOTAAbilities"
+{
+  "item_recipe_elixier_burst"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_2"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "1"
+    "ItemShopTags"                                        ""
+    "ItemPurchasable"                                     "1"
+    "SecretShop"                                          "1"
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_elixier_burst"
+
+    "ItemRequirements"
+    {
+      "01"                                                "item_upgrade_core"
+    }
+  }
+  
+  //=================================================================================================================
+  // Elixier - Burst
+  //=================================================================================================================
+  "item_elixier_burst"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/elixier_burst.lua"
+    "AbilityTextureName"                                  "custom/elixier_burst_4"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "0"
+    "AbilitySharedCooldown"                               "elixier"
+    "AbilityCooldown"                                     "1.0"
+    "AbilityManaCost"                                     "0"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "2"
+    "ItemCost"                                            "1"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+    "ItemShopTags"                                        "consumable"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "burst; burst elixier; burst elixir; attack speed"
+    "ItemStackable"                                       "0"
+    "ItemPermanent"                                       "0"
+    "ItemInitialCharges"                                  "1"
+    "ItemRequiresCharges"                                 "1"
+    "ItemKillable"                                        "1"
+    "ItemPurchasable"                                     "1"
+
+    "SecretShop"                                          "1"
+    "IsTempestDoubleClonable"                             "0"
+    "SpeciallyBannedFromNeutralSlot"                      "1"
+
+    // Precache
+    //-------------------------------------------------------------------------------------------------------------
+    "precache"
+    {
+      "particle"                                          "particles/items/elixiers/elixier_burst.vpcf"
+      "particle"                                          "particles/items/elixiers/elixier_burst_lesser.vpcf"
+    }
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_ms"                                          "50"
+      "total_duration"                                    "60"
+      // stats when it procs:
+      "bonus_as"                                          "400"
+      "bonus_attacks"                                     "6"
+      "bonus_duration"                                    "20"
+    }
+  }
+}

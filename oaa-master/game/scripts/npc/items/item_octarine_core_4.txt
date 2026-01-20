@@ -1,0 +1,59 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Octarine Core 4
+  //=================================================================================================================
+  "item_recipe_octarine_core_4"
+  {
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_4"
+
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "8000"
+    "ItemShopTags"                                        ""
+
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_octarine_core_4"
+    "ItemRequirements"
+    {
+      "01"                                                "item_octarine_core_3;item_upgrade_core_3"
+    }
+  }
+
+  //=================================================================================================================
+  // Octarine Core 4
+  //=================================================================================================================
+  "item_octarine_core_4"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_octarine_core"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "custom/octarine_core_4"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "17900"
+    "ItemShopTags"                                        "health_pool;mana_pool;boost_mana;regen_mana;hard_to_tag"
+    "ItemQuality"                                         "rare"
+    "ItemAliases"                                         "octarine core 4;octarine 4"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "4"
+    "UpgradesItems"                                       "item_octarine_core_5"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_cooldown"                                    "25"
+      "bonus_health"                                      "425 525 675 875 1125"
+      "bonus_mana"                                        "425 525 675 875 1125"
+      "bonus_health_regen"                                "0"
+      "bonus_mana_regen"                                  "6 6.25 6.75 7.5 8.5"
+    }
+  }
+}

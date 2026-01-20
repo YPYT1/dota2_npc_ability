@@ -1,0 +1,74 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Black King Bar 4
+  //=================================================================================================================
+  "item_recipe_black_king_bar_4"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_4"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "8000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_black_king_bar_4"
+    "ItemRequirements"
+    {
+      "01"                                                "item_black_king_bar_3;item_upgrade_core_3"
+    }
+  }
+
+  //=================================================================================================================
+  // Black King Bar 4
+  //=================================================================================================================
+  "item_black_king_bar_4"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/black_king_bar.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityTextureName"                                  "custom/black_king_bar_4"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "45"
+    "AbilityManaCost"                                     "50"
+    "AbilitySharedCooldown"                               "avatar"
+
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "4"
+    "UpgradesItems"                                       "item_black_king_bar_5"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "17050"
+    "ItemShopTags"                                        "str;damage;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "bkb 4;black king bar 4"
+    "ItemSellable"                                        "1"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_strength"                                    "12 17 27 42 62"
+      "bonus_damage"                                      "25 35 55 85 125"
+      "duration"                                          "7"
+      "model_scale"                                       "30"
+      "magic_resist"                                      "60 65 70 75 80"
+    }
+  }
+}

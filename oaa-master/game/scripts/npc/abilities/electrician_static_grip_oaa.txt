@@ -1,0 +1,85 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Electrician: Static Grip
+  //=================================================================================================================
+  "electrician_static_grip"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "ability_lua"
+    "ScriptFile"                                          "abilities/electrician/electrician_static_grip.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES_STRONG"
+    "AbilityTextureName"                                  "custom/electrician_static_grip"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    "HasShardUpgrade"                                     "1"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastPoint"                                    "0.3"
+    "AbilityCastAnimation"                                "ACT_DOTA_CAST_ABILITY_1"
+    "AbilityCastRange"                                    "500"
+
+    // Time
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "14 13 12 11 10 9"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "100 110 120 130 140 150"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "max_stun_duration"
+      {
+        "value"                                           "1.5 1.8 2.1 2.4 2.5 2.6"
+        "special_bonus_unique_electrician_1_oaa"          "+0.2"
+      }
+      "damage_interval"
+      {
+        "value"                                           "0.25"
+        "CalculateSpellDamageTooltip"                     "0"
+      }
+      "damage_per_second"
+      {
+        "value"                                           "50 60 70 80 160 240"
+        "special_bonus_unique_electrician_4_oaa"          "+25%"
+      }
+      "pull_speed"                                        "140"
+      "pull_buffer"                                       "150"
+      "damage_width"
+      {
+        "value"                                           "100"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "pseudochannel"
+      {
+        "value"                                           "0"
+        "special_bonus_shard"                             "=1"
+      }
+      "attack_speed_pct"
+      {
+        "value"                                           "0"
+      }
+    }
+
+    // Precache
+    //-------------------------------------------------------------------------------------------------------------
+    "precache"
+    {
+      "particle"                                          "particles/units/heroes/hero_stormspirit/stormspirit_electric_vortex.vpcf"
+      "soundfile"                                         "soundevents/game_sounds_heroes/game_sounds_stormspirit.vsndevts"
+    }
+  }
+}

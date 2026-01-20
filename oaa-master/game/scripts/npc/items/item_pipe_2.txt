@@ -1,0 +1,89 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Pipe of Insight 2
+  //=================================================================================================================
+  "item_recipe_pipe_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_2"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "1500"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_pipe_2"
+    "ItemRequirements"
+    {
+      "01"                                                "item_pipe;item_upgrade_core"
+    }
+  }
+
+  //=================================================================================================================
+  // Pipe of Insight 2
+  //=================================================================================================================
+  "item_pipe_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_pipe"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+    "AbilityTextureName"                                  "custom/pipe_of_insight_2"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "30"
+    "AbilitySharedCooldown"                               "pipe"
+    "AbilityManaCost"                                     "150"
+    "AbilityCastRange"                                    "1200"
+
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "2"
+    "UpgradesItems"                                       "item_pipe_3"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "4625"
+    "ItemShopTags"                                        "regen_health;boost_magic_resist"
+    "ItemQuality"                                         "rare"
+    "ItemAliases"                                         "pipe of insight 2;pipe 2"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+    "ItemAlertable"                                       "1"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "health_regen"                                      "12 13 14 15 16"
+      "magic_resistance"                                  "20 22 24 26 28"
+      "barrier_debuff_duration"                           "50.0"
+      "tooltip_resist"                                    "20 22 24 26 28"
+      "aura_health_regen"                                 "2.5 5.5 8.5 11.5 14.5"
+      "magic_resistance_aura"                             "8 10 12 14 16"
+      "aura_radius"
+      {
+        "value"                                           "1200"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "barrier_block"                                     "425 525 725 1025 1425"
+      "barrier_duration"                                  "8.0"
+      "barrier_radius"
+      {
+        "value"                                           "1200"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "bonus_all_stats"                                   "0"
+      "barrier_block_creep"                               "425 525 725 1025 1425"
+    }
+  }
+}

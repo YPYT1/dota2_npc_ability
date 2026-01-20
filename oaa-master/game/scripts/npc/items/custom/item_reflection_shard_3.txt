@@ -1,0 +1,72 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Reflection Shard 3
+  //=================================================================================================================
+  "item_recipe_reflection_shard_3"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_4"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "8000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_reflection_shard_3"
+    "ItemRequirements"
+    {
+      "01"                                                "item_reflection_shard_2;item_upgrade_core_3"
+    }
+  }
+
+  //=================================================================================================================
+  // Reflection Shard 3
+  //=================================================================================================================
+  "item_reflection_shard_3"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/reflection_shard.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+    "AbilityTextureName"                                  "custom/reflection_shard_3"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "20"
+    "AbilitySharedCooldown"                               "reflection_shard"
+    "AbilityManaCost"                                     "45"
+
+    "MaxUpgradeLevel"                                     "4"
+    "ItemBaseLevel"                                       "3"
+    "UpgradesItems"                                       "item_reflection_shard_4"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "17050"
+    "ItemShopTags"                                        "str;damage;boost_magic_resist;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "reflect shard 3"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_strength"                                    "17 27 42 62"
+      "bonus_damage"                                      "35 55 85 125"
+      "bonus_magic_resist"                                "22 23 24 25"
+      "duration"                                          "2.5"
+    }
+  }
+}

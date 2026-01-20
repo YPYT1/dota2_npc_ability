@@ -1,0 +1,42 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Ability: Slardar Bash (OAA rework)
+  //=================================================================================================================
+  "slardar_bash_oaa"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "ability_lua"
+    "ScriptFile"                                          "abilities/oaa_bash_of_the_deep.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_PHYSICAL"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_YES"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES_STRONG"
+    "AbilityTextureName"                                  "slardar_bash"
+    "IsBreakable"                                         "1"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    // Time
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "4.4"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "chance"                                            "100"
+      "bonus_damage"
+      {
+        "value"                                           "35 90 145 200 400 600"
+        "special_bonus_unique_slardar_2"                  "+40"
+      }
+      "duration"                                          "1"
+      "duration_creep"                                    "1"
+      "creep_dmg_multiplier"                              "1"
+    }
+  }
+}

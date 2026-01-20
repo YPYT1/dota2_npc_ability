@@ -1,0 +1,68 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Bounty Hunter: Shuriken Toss
+  //=================================================================================================================
+  "bounty_hunter_shuriken_toss"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES" //OAA, Valve forgot about this, slow is dispellable
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastPoint"                                    "0.3"
+    "AbilityCooldown"                                     "5"
+    "AbilityManaCost"                                     "75 80 85 90 95 100"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_damage" //OAA
+      {
+        "value"                                           "100 170 240 310 620 930"
+        "special_bonus_unique_bounty_hunter_2"            "+310"
+      }
+      "speed"                                             "1000"
+      "bounce_aoe"
+      {
+        "value"                                           "1200"
+      }
+      "slow_duration" //OAA
+      {
+        "value"                                           "0.5"
+        "special_bonus_unique_bounty_hunter_5"            "+0.5"
+      }
+      "scepter_cooldown" //OAA, Valve has it wrong, luckily it's unused
+      {
+        "special_bonus_scepter"                           "5"
+      }
+      "passthrough_damage"
+      {
+        "special_bonus_facet_bounty_hunter_shuriken"      "1"
+      }
+      "passthrough_width"
+      {
+        "special_bonus_facet_bounty_hunter_shuriken"      "175"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "cast_range"                                        "525" // OAA, same as AbilityCastRange
+      "slow"                                              "100"
+      "AbilityCastRange" //OAA
+      {
+        "value"                                           "525"
+        "special_bonus_scepter"                           "=600"
+      }
+    }
+  }
+}

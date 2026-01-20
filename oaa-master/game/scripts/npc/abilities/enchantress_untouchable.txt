@@ -1,0 +1,34 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Enchantress: Untouchable
+  //=================================================================================================================
+  "enchantress_untouchable"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_YES"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+    "AbilityType"                                         "ABILITY_TYPE_ULTIMATE"
+
+    "MaxLevel"                                            "5"
+    "RequiredLevel"                                       "6"
+    "LevelsBetweenUpgrades"                               "6"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "slow_attack_speed" //OAA
+      {
+        "value"                                           "-100 -150 -200 -250 -300"
+        "special_bonus_unique_enchantress_3"              "-60"
+      }
+      "slow_duration"
+      {
+        "value"                                           "4"
+      }
+    }
+  }
+}

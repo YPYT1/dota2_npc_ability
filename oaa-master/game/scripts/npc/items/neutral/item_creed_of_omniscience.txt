@@ -1,0 +1,38 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Creed of Omniscience - custom neutral tier 3 item
+  //=================================================================================================================
+  "item_creed_of_omniscience"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/neutral/creed_of_omniscience.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "custom/creed_of_omniscience"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "0"
+    "ItemSellable"                                        "0"
+    "ItemIsNeutralPassiveDrop"                            "1"
+    "ItemPurchasable"                                     "0"
+
+    "Model"                                               "models/props_gameplay/neutral_box.vmdl"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_move_speed"                                  "25"
+      "bonus_strength"                                    "10"
+      "bonus_intelligence"                                "10"
+      "bonus_mana"                                        "200"
+      "bonus_hp_regen"                                    "6"
+      "bonus_cast_range"                                  "125"
+      "bonus_turn_rate"                                   "50"
+      // "bonus_attack_projectile_speed"                   "600"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Broodmother: Spin Web
+  //=================================================================================================================
+  "broodmother_spin_web"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "1200"
+    "AbilityCastPoint"                                    "0.4"
+
+    "AbilityCooldown"                                     "0.0"
+    "AbilityCharges"                                      "4 6 8 10 12 14"
+
+    "AbilityManaCost"                                     "40"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "radius"
+      {
+        "value"                                           "1200"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "count" //OAA, same as AbilityCharges
+      {
+        "value"                                           "4 6 8 10 12 14"
+      }
+      "health_regen"
+      {
+        "value"                                           "0"
+      }
+      "bonus_movespeed"
+      {
+        "value"                                           "10 22 34 46 58 70"
+        "special_bonus_unique_broodmother_web_speed"      "+7" // unused
+      }
+      "AbilityChargeRestoreTime"
+      {
+        "value"                                           "27"
+        "special_bonus_unique_broodmother_5"              "-6"
+      }
+      "bonus_turn_rate"                                   "0.2"
+      "degen" //OAA
+      {
+        "value"                                           "0"
+        "special_bonus_facet_broodmother_necrotic_webs"   "=10 =14 =18 =22 =26 =30"
+      }
+      "break_move_cap"
+      {
+        "value"                                           "0"
+        "special_bonus_unique_broodmother_web_speed"      "1" // unused
+      }
+    }
+  }
+}

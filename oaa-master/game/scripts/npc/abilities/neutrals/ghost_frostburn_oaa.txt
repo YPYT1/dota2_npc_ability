@@ -1,0 +1,39 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Ghost: Frostburn - reduce target's health restoration by a percent on attack
+  //=================================================================================================================
+  "ghost_frostburn_oaa"
+  {
+    "BaseClass"                                           "ability_lua"
+    "ScriptFile"                                          "abilities/neutrals/oaa_ghost_frostburn.lua"
+    "AbilityTextureName"                                  "ghost_frost_attack"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+    "IsBreakable"                                         "1"
+
+    "MaxLevel"                                            "4"
+
+    "precache"
+    {
+      "particle"                                          "particles/ghost_frostbite_ground_elec.vpcf"
+      "particle"                                          "particles/ghost_frostbite_ring.vpcf"
+      "particle"                                          "particles/ghost_frostbite_ring_base.vpcf"
+      "particle"                                          "particles/ghost_frostbite_ring_detail.vpcf"
+      "particle"                                          "particles/ghost_frostbite.vpcf"
+    }
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "heal_prevent_percent"                              "-20 -25 -30 -35" // reduces healing only
+      "health_restoration"                                "-20 -25 -30 -35" // reduces everything else
+      "attack_speed_slow"                                 "-25 -35 -45 -55"
+      "heal_prevent_duration"                             "2.5"
+    }
+  }
+}

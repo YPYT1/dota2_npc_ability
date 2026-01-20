@@ -1,0 +1,71 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Rubick: Fade Bolt
+  //=================================================================================================================
+  "rubick_fade_bolt"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastPoint"                                    "0.1"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "110 125 140 155 170 185"
+
+    // Cast Range
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "800"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "damage"                                            "100 175 250 325 650 975"
+      "jump_damage_reduction_pct"
+      {
+        "value"                                           "6"
+        "CalculateSpellDamageTooltip"                     "0"
+        "DamageTypeTooltip"                               "DAMAGE_TYPE_NONE"
+      }
+      "attack_damage_reduction" //OAA
+      {
+        "value"                                           "20 25 30 35 40 45"
+        "special_bonus_unique_rubick_7"                   "+20"
+        "CalculateSpellDamageTooltip"                     "0"
+        "DamageTypeTooltip"                               "DAMAGE_TYPE_NONE"
+      }
+      "duration"                                          "10.0"
+      "radius"
+      {
+        "value"                                           "440"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "jump_delay"                                        "0.25"
+      "AbilityCooldown"
+      {
+        "value"                                           "16 14 12 10 10 10"
+        "special_bonus_unique_rubick_3"                   "-5"
+      }
+      "damage_reduction_bosses" //OAA
+      {
+        "value"                                           "-15 -20 -25 -30 -35 -40"
+        "CalculateSpellDamageTooltip"                     "0"
+        "DamageTypeTooltip"                               "DAMAGE_TYPE_NONE"
+      }
+    }
+  }
+}

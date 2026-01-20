@@ -1,0 +1,52 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Sohei: Guard - unused
+  //=================================================================================================================
+  "sohei_guard"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "ability_lua"
+    "ScriptFile"                                          "abilities/sohei/sohei_guard.lua"
+    "AbilityTextureName"                                  "custom/ronin_guard"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastPoint"                                    "0.0"
+
+    // Time
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "30 25 20 15 10 5"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "80"
+
+    // Precache
+    //-------------------------------------------------------------------------------------------------------------
+    "precache"
+    {
+      "particle"                                          "particles/hero/sohei/guard.vpcf"
+      "particle"                                          "particles/hero/sohei/reflect_sakura_leaves.vpcf"
+      "particle"                                          "particles/items/reflection_shard/immunity_sphere_yellow.vpcf"
+      "soundfile"                                         "soundevents/units/game_sounds_sohei.vsndevts"
+    }
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "charges_required"                                  "2"
+      "guard_duration"                                    "2.0"
+      "knockback_speed"                                   "1200"
+    }
+  }
+}

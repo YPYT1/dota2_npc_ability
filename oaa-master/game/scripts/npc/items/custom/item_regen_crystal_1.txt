@@ -1,0 +1,83 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Regeneration Crystal 1
+  //=================================================================================================================
+  "item_recipe_regen_crystal_1"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_3"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "3500"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_regen_crystal_1"
+    "ItemRequirements"
+    {
+      "01"                                                "item_heart_2;item_upgrade_core_2"
+    }
+  }
+
+  //=================================================================================================================
+  // Regeneration Crystal 1
+  //=================================================================================================================
+  "item_regen_crystal_1"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/regen_crystal.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    "AbilityTextureName"                                  "custom/regen_crystal_1"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "25" // like Essence Ring
+    "AbilitySharedCooldown"                               "regen_crystal"
+    "AbilityManaCost"                                     "200"
+
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_regen_crystal_2"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "10100"
+    "ItemShopTags"                                        "regen_health;health_pool"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "regen crystal"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_health"                                      "1300 1800 2450"
+      "bonus_strength"                                    "0"
+      "max_mana_to_hp_regen"                              "2.4"
+      //"active_hp_regen"                                   "175 200 225"
+      //"active_hp_regen_amp"                               "50"
+      "active_max_hp_as_heal"                             "7"
+      "duration"                                          "6"
+    }
+
+    // Precache
+    //-------------------------------------------------------------------------------------------------------------
+    "precache"
+    {
+      "particle"                                          "particles/items/regen_crystal/regen_ambient.vpcf"
+      "particle"                                          "particles/items5_fx/essence_ring.vpcf"
+    }
+  }
+}

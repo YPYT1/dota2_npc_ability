@@ -1,0 +1,69 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Visage: Gravekeeper's Cloak (OAA rework) - unused
+  //=================================================================================================================
+  "visage_gravekeepers_cloak_oaa"
+  {
+    "BaseClass"                                           "ability_lua"
+    "ScriptFile"                                          "abilities/visage_gravekeepers_cloak.lua"
+    "AbilityTextureName"                                  "visage_gravekeepers_cloak"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "IsBreakable"                                         "1"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    "HasShardUpgrade"                                     "1"
+
+    "AbilityCastAnimation"                                "ACT_DOTA_CAST_ABILITY_3"
+    "AbilityCastRange"                                    "900"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "max_layers"
+      {
+        "value"                                           "4"
+        "special_bonus_unique_visage_oaa_6"               "+4"
+      }
+      "damage_reduction"
+      {
+        "value"                                           "8 12 16 20 24 28"
+      }
+      "recovery_time"
+      {
+        "value"                                           "7 6 5 4 3 3"
+        "special_bonus_unique_visage_oaa_5"               "-1.5"
+      }
+      "minimum_damage"
+      {
+        "value"                                           "40 50 60 70 90 130"
+        "special_bonus_unique_visage_oaa_1"               "+70"
+      }
+      "radius"
+      {
+        "value"                                           "1200"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "max_damage_reduction"
+      {
+        "value"                                           "80"
+      }
+      "shard_hp_restoration_pct"
+      {
+        "value"                                           "25"
+      }
+      "shard_cooldown"
+      {
+        "value"                                           "35"
+      }
+      "shard_manacost"
+      {
+        "value"                                           "125"
+      }
+    }
+  }
+}

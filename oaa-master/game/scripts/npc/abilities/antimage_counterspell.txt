@@ -1,0 +1,69 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Anti-Mage: Counterspell
+  //=================================================================================================================
+  "antimage_counterspell"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "0"
+    "AbilityCastPoint"                                    "0"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "50"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "magic_resistance"
+      {
+        "value"                                           "16 24 32 40 48 56"
+        "special_bonus_unique_antimage_4"                 "+10"
+      }
+      "duration"                                          "1.2"
+      "duration_illusion"                                 "4"
+      "outgoing_damage"                                   "0"
+      "incoming_damage"                                   "150" //OAA
+      "does_reflect"
+      {
+        "value"                                           "1"
+      }
+      "reflected_spell_amp"
+      {
+        "value"                                           "0"
+      }
+      "mana_drain_percent"
+      {
+        "special_bonus_facet_antimage_magebanes_mirror"   "=150 =200 =250 =300 =350 =400"
+      }
+      "damage_from_mana_drain_percent"
+      {
+        "special_bonus_facet_antimage_magebanes_mirror"   "100"
+      }
+      "max_damage_from_mana_drain"
+      {
+        "special_bonus_facet_antimage_magebanes_mirror"   "400 400 400 400 800 1200"
+      }
+      "AbilityCooldown"
+      {
+        "value"                                           "15 11 7 3 3 3"
+      }
+      "heal_pct"
+      {
+        "value"                                           "0"
+      }
+    }
+  }
+}

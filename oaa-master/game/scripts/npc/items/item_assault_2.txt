@@ -1,0 +1,75 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Assault Cuirass 2
+  //=================================================================================================================
+  "item_recipe_assault_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_2"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "1500"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_assault_2"
+    "ItemRequirements"
+    {
+      "01"                                                "item_assault;item_upgrade_core"
+    }
+  }
+
+  //=================================================================================================================
+  // Assault Cuirass 2
+  //=================================================================================================================
+  "item_assault_2"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_assault"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "custom/assault_cuirass_2"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_YES"
+
+    "AbilityCastRange"                                    "1200"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "6625"
+    "ItemShopTags"                                        "attack_speed;armor;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "ac 2;assault cuirass 2"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    //Spicy Parameters
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "2"
+    "UpgradesItems"                                       "item_assault_3"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_attack_speed"                                "30 35 40 45 50"
+      "bonus_armor"                                       "10 11 12 13 14"
+      "aura_radius"
+      {
+        "value"                                           "1200"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "aura_attack_speed"                                 "30 35 40 45 50"
+      "aura_positive_armor"                               "5 6 8 11 15"
+      "aura_negative_armor"                               "-5 -6 -8 -11 -15"
+    }
+  }
+}

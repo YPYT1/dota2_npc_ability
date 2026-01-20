@@ -1,0 +1,14 @@
+"DOTAHeroes"
+{
+  //=================================================================================================================
+  // HERO: Faceless Void
+  //=================================================================================================================
+  "npc_dota_hero_faceless_void"
+  {
+    "Ability3"                                            "faceless_void_time_lock_oaa" // replaces faceless_void_time_lock
+
+    "Ability12"                                           "special_bonus_unique_faceless_void_3_oaa" // replaces special_bonus_unique_faceless_void_3
+
+    "Ability17"                                           "special_bonus_unique_faceless_void_2_oaa" // replaces special_bonus_unique_faceless_void_2
+  }
+}

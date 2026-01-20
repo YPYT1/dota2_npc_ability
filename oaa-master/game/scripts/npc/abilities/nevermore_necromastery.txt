@@ -1,0 +1,57 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Shadow Fiend: Necromastery (Innate)
+  //=================================================================================================================
+  "nevermore_necromastery"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+
+    "MaxLevel"                                            "6" // same as Dependent ability (Requiem) + 1
+    "DependentOnAbility"                                  "nevermore_requiem"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "necromastery_damage_per_soul" //OAA
+      {
+        "value"                                           "1 2 3 4 5 6"
+        "CalculateSpellDamageTooltip"                     "0"
+        "special_bonus_unique_nevermore_1"                "+1"
+      }
+      "necromastery_max_souls"
+      {
+        "value"                                           "20 22 24 26 26 26"
+      }
+      "souls_per_kill"                                    "1"
+      "souls_per_hero_kill"                               "4"
+      "necromastery_soul_release"                         "0.7"
+      "attack_range_bonus"                                "0"
+      "shard_souls_per_kill" // unused
+      {
+        "special_bonus_shard"                             "2"
+      }
+      "shard_crit_pct" // unused
+      {
+        "special_bonus_shard"                             "190"
+      }
+      "shard_fear_duration" // unused
+      {
+        "special_bonus_shard"                             "0.4"
+      }
+      "soul_release_tooltip"                              "30.0"
+      "max_soul_increase_on_hero_kill" // OAA, because fuck this shit Valve
+      {
+        "special_bonus_facet_nevermore_lasting_presence"  "0"
+      }
+      "current_max_souls_tooltip"
+      {
+        "dynamic_value"                                   "true"
+      }
+    }
+  }
+
+}

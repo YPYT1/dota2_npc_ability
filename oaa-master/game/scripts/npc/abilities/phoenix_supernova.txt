@@ -1,0 +1,69 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Phoenix: Supernova
+  //=================================================================================================================
+  "phoenix_supernova"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityType"                                         "ABILITY_TYPE_ULTIMATE"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO"
+    "AbilityUnitTargetFlags"                              "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_YES"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+
+    "MaxLevel"                                            "5"
+    "RequiredLevel"                                       "6"
+    "LevelsBetweenUpgrades"                               "6"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "450"
+    "AbilityCastPoint"                                    "0.01"
+
+    // Time
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "90" //OAA
+    "AbilityDuration"                                     "6.0"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "150 200 250 300 350"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "aura_radius"
+      {
+        "value"                                           "1200"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "damage_per_sec"                                    "60 120 180 360 540" //OAA
+      "tick_interval"                                     "0.2"
+      "stun_duration"
+      {
+        "value"                                           "1.6 2 2.4 2.5 2.6"
+        "special_bonus_unique_phoenix_2"                  "+0.6"
+      }
+      "max_hero_attacks" //OAA
+      {
+        "value"                                           "6 9 12 14 16"
+        "special_bonus_unique_phoenix_1"                  "+2"
+      }
+      "max_hero_attacks_scepter" // OAA, max_hero_attacks + 1
+      {
+        "special_bonus_scepter"                           "7 10 13 15 17"
+        "special_bonus_unique_phoenix_1"                  "+2"
+      }
+      "cast_range_tooltip_scepter" // OAA, Valve forgot about it
+      {
+        "special_bonus_scepter"                           "450"
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Sand King: Epicenter
+  //=================================================================================================================
+  "sandking_epicenter"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityType"                                         "ABILITY_TYPE_ULTIMATE"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+
+    "MaxLevel"                                            "5"
+    "RequiredLevel"                                       "6"
+    "LevelsBetweenUpgrades"                               "6"
+
+    // Time
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityDuration"                                     "6.0"
+    "AbilityCastPoint"                                    "2.0"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "150 225 300 375 450"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "AbilityCooldown"
+      {
+        "value"                                           "120 110 100 90 80"
+      }
+      "epicenter_pulses"
+      {
+        "value"                                           "12 16 20 24 28"
+        "special_bonus_unique_sand_king"                  "+8"
+      }
+      "epicenter_damage"
+      {
+        "value"                                           "60 70 80 110 140"
+        "special_bonus_shard"                             "+5"
+        "CalculateSpellDamageTooltip"                     "1"
+      }
+      "epicenter_radius_base" //OAA, intentional nerf
+      {
+        "value"                                           "425"
+        "special_bonus_unique_sand_king_5"                "+75"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "epicenter_radius_increment" //OAA, intentional nerf
+      {
+        "value"                                           "10"
+        "special_bonus_unique_sand_king_5"                "+7"
+      }
+      "epicenter_slow"
+      {
+        "value"                                           "-30 -40 -50 -60 -70"
+      }
+      "epicenter_slow_as" //OAA
+      {
+        "value"                                           "-50 -70 -90 -110 -130"
+      }
+      "shard_radius" //OAA, Valve has it wrong, they put +100 for special_bonus_unique_sand_king_5
+      {
+        "special_bonus_shard"                             "425"
+        "special_bonus_unique_sand_king_5"                "+75"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "shard_interval"
+      {
+        "special_bonus_shard"                             "3"
+      }
+      "linger_duration"                                   "3.0"
+      "scepter_explosion_radius_pct"
+      {
+        "special_bonus_scepter"                           "+35"
+      }
+      "scepter_explosion_min_dist"
+      {
+        "special_bonus_scepter"                           "+120"
+      }
+      "scepter_explosions_per_pulse"
+      {
+        "special_bonus_scepter"                           "+3"
+      }
+      "spine_tick_rate"
+      {
+        "special_bonus_scepter"                           "=0.5"
+      }
+      "spine_damage_pct"
+      {
+        "special_bonus_scepter"                           "=50"
+      }
+      "shard_explosions_per_pulse"
+      {
+        "special_bonus_scepter"                           "+1"
+      }
+    }
+  }
+}

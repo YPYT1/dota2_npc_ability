@@ -1,0 +1,72 @@
+"DOTAAbilities"
+{
+  // "item_recipe_upgrade_core_3"
+  // {
+    // // General
+    // //-------------------------------------------------------------------------------------------------------------
+    // "BaseClass"                                           "item_datadriven"
+    // "Model"                                               "models/props_gameplay/recipe.vmdl"
+    // "AbilityTextureName"                                  "custom/recipe/recipe_3"
+
+    // // Item Info
+    // //-------------------------------------------------------------------------------------------------------------
+    // "ItemCorePointCost"                                   "0"
+    // "ItemCost"                                            "1"
+    // "ItemShopTags"                                        ""
+    // "ItemPurchasable"                                     "0"
+
+    // // Recipe
+    // //-------------------------------------------------------------------------------------------------------------
+    // "ItemRecipe"                                          "1"
+    // "ItemResult"                                          "item_upgrade_core_3"
+
+    // "ItemRequirements"
+    // {
+      // "01"                                                "item_upgrade_core_2;item_upgrade_core_2"
+    // }
+  // }
+
+  //=================================================================================================================
+  // Angels Soul
+  //=================================================================================================================
+  "item_upgrade_core_3"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    // "BaseClass"                                           "item_lua"
+    // "ScriptFile"                                          "items/upgrade_core.lua"
+    // "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+    "BaseClass"                                           "item_datadriven"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityTextureName"                                  "custom/angels_soul"
+    "Effect"                                              "particles/items/upgrade_3.vpcf"
+    "Model"                                               "models/items/upgrade_3.vmdl"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "8"
+    "ItemCost"                                            "1"
+    "ItemPurchasable"                                     "0"
+    //"ItemSellable"                                      "0"
+    "ItemKillable"                                        "1"
+    "ItemShareability"                                    "ITEM_NOT_SHAREABLE"
+    //"ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_ALWAYS"
+    "IsTempestDoubleClonable"                             "0"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    // "AbilityValues"
+    // {
+      // "channel_time"                                    "3.0"
+      // "core_count"                                      "2"
+    // }
+    "precache"
+    {
+      "particle"                                          "particles/items/upgrade_3.vpcf"
+      "model"                                             "models/items/upgrade_3.vmdl"
+    }
+  }
+}

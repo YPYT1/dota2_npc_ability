@@ -1,0 +1,33 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Moon Crest - custom neutral tier 1 item
+  //=================================================================================================================
+  "item_moon_crest"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/neutral/moon_crest.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "custom/moon_crest"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "0"
+    "ItemSellable"                                        "0"
+    "ItemIsNeutralPassiveDrop"                            "1"
+    "ItemPurchasable"                                     "0"
+
+    "Model"                                               "models/props_gameplay/neutral_box.vmdl"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_attack_speed"                                "15"
+      "bonus_armor"                                       "2"
+      "bonus_evasion"                                     "5"
+    }
+  }
+}

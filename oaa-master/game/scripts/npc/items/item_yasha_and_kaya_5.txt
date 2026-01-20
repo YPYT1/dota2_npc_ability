@@ -1,0 +1,68 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Yasha and Kaya 5
+  //=================================================================================================================
+  "item_recipe_yasha_and_kaya_5"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_5"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "17000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_yasha_and_kaya_5"
+    "ItemRequirements"
+    {
+      "01"                                                "item_yasha_and_kaya_4;item_upgrade_core_4"
+    }
+  }
+  //=================================================================================================================
+  // Yasha and Kaya 5
+  //=================================================================================================================
+  "item_yasha_and_kaya_5"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_yasha_and_kaya"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"                                  "custom/yasha_and_kaya_5"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "5"
+    "UpgradesItems"                                       ""
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "34200"
+    "ItemShopTags"                                        "agi;int;attack_speed;move_speed;regen_mana;unique"
+    "ItemQuality"                                         "artifact"
+    "ItemAliases"                                         "ynk 5;y&k 5;yk 5;yasha and kaya 5"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_agility"                                     "20 25 35 50 70"
+      "bonus_intellect"                                   "20 25 35 50 70"
+      "bonus_attack_speed"                                "20 25 30 35 40"
+      "mana_regen_multiplier"                             "50 60 70 80 90"
+      "movement_speed_percent_bonus"                      "12 14 16 18 20"
+      "spell_amp"                                         "12 16 20 24 28"
+      "cast_speed_pct"                                    "22 24 26 28 30"
+    }
+  }
+}

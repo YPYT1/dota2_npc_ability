@@ -1,0 +1,25 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Azazel Scout: Permanent Invisibility
+  //=================================================================================================================
+  "azazel_scout_permanent_invisibility"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "riki_permanent_invisibility"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+    "IsBreakable"                                         "1"
+
+    "MaxLevel"                                            "1"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "fade_delay"                                        "0.1" //OAA
+      "movement_speed"                                    "0" //OAA
+    }
+  }
+}

@@ -1,0 +1,75 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Dispel Orb 3
+  //=================================================================================================================
+  "item_recipe_dispel_orb_3"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_5"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "17000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_dispel_orb_3"
+    "ItemRequirements"
+    {
+      "01"                                                "item_dispel_orb_2;item_upgrade_core_4"
+    }
+  }
+
+  //=================================================================================================================
+  // Dispel Orb 3
+  //=================================================================================================================
+  "item_dispel_orb_3"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/dispel_orb.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+    "AbilityTextureName"                                  "custom/dispel_orb_3"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+
+    "MaxUpgradeLevel"                                     "3"
+    "ItemBaseLevel"                                       "3"
+    "UpgradesItems"                                       ""
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "100"
+    "AbilityCooldown"                                     "20"
+    "AbilitySharedCooldown"                               "purge"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "34050"
+    "ItemShopTags"                                        "agi;int;str;damage;hard_to_tag"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "dispel orb 3; purge crystal 3"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_strength"                                    "27 42 62"
+      "bonus_agility"                                     "41 56 76"
+      "bonus_intellect"                                   "22 27 32"
+      "bonus_damage"                                      "55 85 125"
+      "magic_resist_while_silenced"                       "26 28 30"
+      "tick_interval"                                     "0.2"
+      "duration"                                          "7.0"
+    }
+  }
+}

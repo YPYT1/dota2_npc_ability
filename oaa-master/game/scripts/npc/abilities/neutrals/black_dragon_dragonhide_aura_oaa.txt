@@ -1,0 +1,33 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Black Dragon: Dragonhide Aura - Bonus armor aura, doesn't stack with itself.
+  // TODO: maybe add % armor bonus
+  //=================================================================================================================
+  "black_dragon_dragonhide_aura_oaa"
+  {
+    "BaseClass"                                           "ability_lua"
+    "ScriptFile"                                          "abilities/neutrals/oaa_black_dragon_dragonhide_aura.lua"
+    "AbilityTextureName"                                  "black_dragon_dragonhide_aura"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_NO"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ALLIES_YES"
+    "IsBreakable"                                         "1"
+
+    "MaxLevel"                                            "4"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_armor"                                       "3 4 5 6"
+      "radius"
+      {
+        "value"                                           "1200"
+        "affected_by_aoe_increase"                        "1"
+      }
+    }
+  }
+}

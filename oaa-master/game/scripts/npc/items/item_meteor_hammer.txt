@@ -1,0 +1,107 @@
+"DOTAAbilities"
+{
+  "item_recipe_meteor_hammer"                             "REMOVE"
+  "item_meteor_hammer"                                    "REMOVE"
+
+  //=================================================================================================================
+  // Recipe: Meteor Hammer 1
+  //=================================================================================================================
+  "item_recipe_meteor_hammer_1"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_1"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "100"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_meteor_hammer_1"
+    "ItemRequirements"
+    {
+      "01"                                                "item_kaya;item_diadem;item_crown"
+    }
+  }
+
+  //=================================================================================================================
+  // Meteor Hammer 1
+  //=================================================================================================================
+  "item_meteor_hammer_1"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/meteor_hammer.lua"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+    "AbilityTextureName"                                  "custom/meteor_hammer_1"
+    "AbilityUnitDamageType"                               "DAMAGE_TYPE_MAGICAL"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+
+    // Spicy Paramaters
+    //-------------------------------------------------------------------------------------------------------------
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_meteor_hammer_2"
+
+    // Time
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityChannelTime"                                  "2"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                                    "600"
+    "AbilitySharedCooldown"                               "meteor"
+    "AbilityCooldown"                                     "25 23 21 19 17"
+    "AbilityManaCost"                                     "125"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "3650"
+    "ItemQuality"                                         "epic"
+    "ItemAliases"                                         "mh;meteor hammer"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_intellect"                                   "26 31 41 56 76" // Kaya (16); Diadem (6); Crown (4);
+      "bonus_strength"                                    "12 17 22 27 32" // Diadem (6); Crown (4);
+      "bonus_agility"                                     "12 17 22 27 32" // Diadem (6); Crown (4);
+      "spell_amp"                                         "12 16 20 24 28" // Kaya (10);
+      "mana_regen_multiplier"                             "50 60 70 80 90" // Kaya (50);
+
+      "burn_dps_boss"                                     "150 300 450 600 750"
+      "burn_dps"                                          "60 150 240 330 420" // vanilla: 50
+      "burn_duration"                                     "6"
+      "stun_duration"                                     "1.5" // vanilla: 0.5
+      "burn_interval"                                     "1.0"
+      "land_time"                                         "0.5"
+      "impact_radius"
+      {
+        "value"                                           "380"
+        "affected_by_aoe_increase"                        "1"
+      }
+      "impact_damage_boss"                                "200 400 700 1100 1600"
+      "impact_damage"                                     "130 260 455 715 1040" // vanilla: 130; impact_damage_boss * 0.65
+      "move_speed_slow_pct"                               "20 25 30 35 40"
+      "cooldown_tooltip"                                  "24 22 20 18 16"
+    }
+
+    "precache"
+    {
+      "particle"                                          "particles/items4_fx/meteor_hammer_aoe.vpcf"
+      "particle"                                          "particles/items4_fx/meteor_hammer_spell.vpcf"
+      "particle"                                          "particles/items4_fx/meteor_hammer_spell_debuff.vpcf"
+      "particle"                                          "particles/items4_fx/meteor_hammer_cast.vpcf"
+    }
+  }
+}

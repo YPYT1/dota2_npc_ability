@@ -1,0 +1,14 @@
+<root>
+  <styles>
+    <include src="file://{resources}/styles/custom_game/info.css" />
+  </styles>
+  <scripts>
+    <include src="file://{resources}/scripts/custom_game/info.js" />
+  </scripts>
+  <Panel class="InfoContainer">
+    <Label class="InfoLabel" id="InfoVersion"/>
+    <Label class="InfoLabel" id="InfoMap"/>
+    <Label class="InfoLabel" id="InfoDateTime"/>
+    <Label class="InfoLabel" id="InfoMode"/>
+  </Panel>
+</root>

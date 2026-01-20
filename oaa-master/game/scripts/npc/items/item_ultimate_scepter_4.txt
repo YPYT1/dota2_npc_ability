@@ -1,0 +1,65 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Scepter 4
+  //=================================================================================================================
+  "item_recipe_aghanims_scepter_4"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_datadriven"
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"                                  "custom/recipe/recipe_4"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCorePointCost"                                   "0"
+    "ItemCost"                                            "8000"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_aghanims_scepter_4"
+    "ItemRequirements"
+    {
+      "01"                                                "item_aghanims_scepter_3;item_upgrade_core_3"
+    }
+  }
+
+  //=================================================================================================================
+  // Scepter 4
+  //=================================================================================================================
+  "item_aghanims_scepter_4"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "item_lua"
+    "ScriptFile"                                          "items/aghanims.lua"
+    "AbilityTextureName"                                  "custom/ultimate_scepter_4"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "17200"
+    "ItemShopTags"                                        "int;str;agi;mana_pool;health_pool;hard_to_tag"
+    "ItemQuality"                                         "rare"
+    "ItemAliases"                                         "ags 4;ultimate 4;aghanim's scepter 4;aghs 4"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_NEVER"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_TO_SPECTATORS"
+
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "4"
+    "UpgradesItems"                                       "item_aghanims_scepter_5"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_all_stats"                                   "10 15 20 25 30"
+      "bonus_health"                                      "175 275 425 625 875"
+      "bonus_mana"                                        "175 275 425 625 875"
+      "talent_level_tooltip"                              "0 10 15 20 25"
+    }
+  }
+}

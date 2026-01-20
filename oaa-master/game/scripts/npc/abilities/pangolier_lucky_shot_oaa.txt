@@ -1,0 +1,37 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Pangolier: Lucky Shot (OAA rework) - unused
+  //=================================================================================================================
+  "pangolier_lucky_shot_oaa"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                                           "ability_lua"
+    "ScriptFile"                                          "abilities/oaa_pangolier_lucky_shot.lua"
+    "AbilityTextureName"                                  "pangolier_lucky_shot"
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+    "IsBreakable"                                         "1"
+
+    "MaxLevel"                                            "6"
+    "RequiredLevel"                                       "1"
+    "LevelsBetweenUpgrades"                               "2"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "chance_pct"                                        "17"
+      "duration"                                          "3.5 4 4.5 5 5.5 6"
+      "duration_ranged"                                   "3.5 4 4.5 5 5.5 6"
+      "slow"                                              "0"
+      "armor"
+      {
+        "value"                                           "3 5 7 9 13 17"
+        "special_bonus_unique_pangolier_luckyshot_armor"  "+4"
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Brewmaster Storm: Cyclone
+  //=================================================================================================================
+  "brewmaster_storm_cyclone"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+    "SpellImmunityType"                                   "SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES"
+
+    "MaxLevel"                                            "5" // MaxLevel: 6 with aghanims scepter
+
+    "AbilityCastRange"                                    "600"
+
+    // Time
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "8.0"
+    "AbilityCastPoint"                                    "0.4"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                                     "150"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "duration_hero"                                     "3 4 5 5.5 6 6.5" //OAA
+      "duration_unit"                                     "16"
+      "landing_damage"                                    "75 80 85 90 100 115" //OAA
+    }
+  }
+}

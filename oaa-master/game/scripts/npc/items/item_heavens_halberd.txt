@@ -1,0 +1,77 @@
+"DOTAAbilities"
+{
+  //=================================================================================================================
+  // Recipe: Heaven's Halberd
+  //=================================================================================================================
+  "item_recipe_heavens_halberd"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "Model"                                               "models/props_gameplay/recipe.vmdl"
+    //"AbilityTextureName"                                  "custom/recipe/recipe_1"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "450"
+    "ItemShopTags"                                        ""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"                                          "1"
+    "ItemResult"                                          "item_heavens_halberd"
+    "ItemRequirements"
+    {
+      "01"                                                "item_vanguard;item_crown"
+    }
+  }
+
+  //=================================================================================================================
+  // Heaven's Halberd
+  //=================================================================================================================
+  "item_heavens_halberd"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"                                     "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"                               "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"                               "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "SpellDispellableType"                                "SPELL_DISPELLABLE_YES_STRONG"
+    "AbilityTextureName"                                  "custom/heavens_halberd_1"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                                     "20 19 18 17 16"
+    "AbilitySharedCooldown"                               "halberd"
+    "AbilityCastRange"                                    "800" //OAA
+    "AbilityCastPoint"                                    "0.0"
+    "AbilityManaCost"                                     "25"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"                                            "2600"
+    "ItemShopTags"                                        "str;damage;evasion"
+    "ItemQuality"                                         "artifact"
+    "ItemAliases"                                         "heaven's halberd;halberd"
+    "ItemDisassembleRule"                                 "DOTA_ITEM_DISASSEMBLE_ALWAYS"
+    "ItemDeclarations"                                    "DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    "MaxUpgradeLevel"                                     "5"
+    "ItemBaseLevel"                                       "1"
+    "UpgradesItems"                                       "item_heavens_halberd_2"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityValues"
+    {
+      "bonus_health"                                      "275 375 525 725 975"
+      "bonus_health_regen"                                "6 9 12 15 18"
+      "block_damage_melee"                                "60 120 180 240 300"
+      "block_damage_ranged"                               "30 60 90 120 150"
+      "block_chance"                                      "60"
+      "bonus_all_stats"                                   "5 10 15 20 25"
+      "disarm_range"                                      "3.0 3.25 3.5 3.75 4.0"
+      "disarm_melee"                                      "3.0 3.25 3.5 3.75 4.0"
+      "cooldown_tooltip"                                  "20 19 18 17 16" //OAA
+    }
+  }
+}
