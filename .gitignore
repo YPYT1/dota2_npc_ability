@@ -5,7 +5,7 @@
 *.swo
 *~
 .github/
-
+.cursor/
 # OS
 .DS_Store
 Thumbs.db
